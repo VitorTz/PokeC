@@ -7,6 +7,7 @@
 namespace pk {
 
 	typedef struct tiled_map_info {
+		const char* name{};
 		const char* file{};
 		const char* terrain_image{};
 		float width{};

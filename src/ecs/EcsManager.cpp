@@ -6,10 +6,9 @@ pk::ECS* ecs{ nullptr };
 
 
 pk::ECS* pk::ecs_create(const pk::SceneID scene_id) {
-	if (ecs_map.find(scene_id) != ecs_map.end()) {
-		return;
+	if (ecs_map.find(scene_id) == ecs_map.end()) {
+		ecs_map.emplace(scene_id, std::make_unique<pk::ECS>());
 	}
-	ecs_map.emplace(scene_id, std::make_unique<pk::ECS>());	
 	return ecs_map[scene_id].get();
 }
 

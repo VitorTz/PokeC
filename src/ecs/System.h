@@ -20,22 +20,37 @@ namespace pk {
 	};
 
 	class TransformSystem : public pk::System {
-	public:
-		TransformSystem();
+	public:		
 		void update(const float dt) override;
 		void draw(const pk::entity_t e) override;
 	};
 
 	class SpriteSystem: public pk::System {
-	public:
-		SpriteSystem();
+	public:		
 		void update(const float dt) override;
 		void draw(const pk::entity_t e) override;
 	};
 
 	class SpriteAnimationSystem : public pk::System {
+	public:		
+		void update(const float dt) override;
+		void draw(const pk::entity_t e) override;
+	};
+
+	class CharacterSystem : public pk::System {
 	public:
-		SpriteAnimationSystem();
+		void update(const float dt) override;
+		void draw(const pk::entity_t e) override;
+	};
+
+	class PlayerSystem: public pk::System {
+	public:
+		void update(const float dt) override;
+		void draw(const pk::entity_t e) override;
+	};
+
+	class TransitionSystem : public pk::System {
+	public:
 		void update(const float dt) override;
 		void draw(const pk::entity_t e) override;
 	};
@@ -64,10 +79,14 @@ namespace pk {
 			this->register_component<pk::transform_t, pk::TransformSystem>(false);
 			this->register_component<pk::sprite_t, pk::SpriteSystem>(true);
 			this->register_component<pk::sprite_animation_t, pk::SpriteAnimationSystem>(true);
+			this->register_component<pk::character_t, pk::CharacterSystem>(false);
+			this->register_component<pk::player_t, pk::PlayerSystem>(false);
+			this->register_component<pk::transition_t, pk::TransitionSystem>(true);
 			assert(this->system_map.size() == pk::NUM_COMPONENTS);
 
 			// Update Order
 			this->update_order.push_back(typeid(pk::sprite_animation_t).hash_code());
+			this->update_order.push_back(typeid(pk::player_t).hash_code());
 
 			this->entity_to_drawable_components.reserve(pk::MAX_ENTITIES);
 			for (pk::entity_t e = 0; e < pk::MAX_ENTITIES; e++)
@@ -99,14 +118,17 @@ namespace pk {
 					this->system_map[c]->draw(pair.second);
 		}
 
+		template<typename T>
+		const std::unordered_set<pk::entity_t>& get_entities() {
+			return this->system_map[typeid(T).hash_code()]->entities;
+		}
+
 		void clear() {
 			for (auto& pair : this->system_map)
 				pair.second->entities.clear();			
 			for (auto& pair : this->entity_to_drawable_components)
 				pair.second.clear();
 		}
-
-		
 
 	};
 

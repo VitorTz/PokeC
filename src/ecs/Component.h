@@ -9,7 +9,7 @@
 
 namespace pk {
 
-	constexpr std::size_t NUM_COMPONENTS{ 3 };
+	constexpr std::size_t NUM_COMPONENTS{ 6 };
 
 	typedef struct transform {
 		Rectangle rect{};
@@ -43,6 +43,36 @@ namespace pk {
 		    max_index(texture.width / width) { }
 	} sprite_animation_t;
 
+	typedef struct character {
+		pk::ObjectID id{};		
+		bool last_is_idle{};
+		bool is_idle{};
+		char last_direction{'d'};
+		char direction{'d'};
+		character() = default;
+		character(const pk::ObjectID id) : id(id) { }
+	} character_t;
+
+	typedef struct player {
+		pk::entity_t player_entity{};
+		pk::entity_t shadow_entity{};
+		Rectangle collision_box{};
+		Rectangle action_box{};
+		player() = default;
+		explicit player(
+			const pk::entity_t player_entity, 
+			const pk::entity_t shadow_entity
+		) : player_entity(player_entity),
+			shadow_entity(shadow_entity)  { }
+	} player_t;
+
+	typedef struct transition {
+		pk::SceneID scene_id;
+		bool is_hovered{};	
+		transition() = default;
+		explicit transition(const pk::SceneID scene_id) : scene_id(scene_id) { }
+	} transition_t;
+
 	class ComponentManager {
 
 	private:
@@ -63,6 +93,9 @@ namespace pk {
 			this->register_component<pk::transform_t>();
 			this->register_component<pk::sprite_t>();
 			this->register_component<pk::sprite_animation_t>();
+			this->register_component<pk::character_t>();
+			this->register_component<pk::player_t>();
+			this->register_component<pk::transition_t>();
 			assert(this->component_map.size() == pk::NUM_COMPONENTS);
 		}
 
@@ -74,7 +107,7 @@ namespace pk {
 
 		template<typename T>
 		T* at(const pk::entity_t e) {			
-			return this->component_map[typeid(T).hash_code()] + sizeof(T) * e;
+			return (T*)(this->component_map[typeid(T).hash_code()] + sizeof(T) * e);
 		}
 
 		template<typename T>

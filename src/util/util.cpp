@@ -8,3 +8,13 @@ std::size_t pk::hash_str(const char* s) {
         hash = ((hash << 5) + hash) + c;
     return hash;
 }
+
+
+void pk::readstr(char* buffer, FILE* file) {
+    int i = 0;
+    char c = '0';
+    while (c != '\0') {
+        fread(&c, sizeof(char), 1, file);
+        buffer[i++] = c;
+    }
+}

@@ -17,7 +17,7 @@
    <image source="../../graphics/objects/sand.png" width="64" height="64"/>
   </tile>
  </tileset>
- <layer id="1" name="Terrain" width="86" height="86">
+ <layer id="1" name="Terrain" width="86" height="86" visible="0">
   <data encoding="csv">
 195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,196,132,132,136,132,132,132,136,132,123,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
 195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,196,132,132,147,126,132,132,136,132,132,123,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
@@ -183,12 +183,12 @@
   </object>
   <object id="1572" name="Player" x="4449.33" y="3881.33">
    <properties>
-    <property name="obj-id" type="int" value="13"/>
+    <property name="obj-id" type="int" value="10"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="9" name="Coast" locked="1">
+ <objectgroup id="9" name="Coast" visible="0" locked="1">
   <properties>
    <property name="group-id" type="int" value="3"/>
   </properties>
@@ -3770,13 +3770,13 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="2" name="Objects">
+ <objectgroup id="2" name="GameObjs">
   <properties>
    <property name="group-id" type="int" value="5"/>
   </properties>
   <object id="1" gid="211" x="4352" y="3776" width="320" height="320">
    <properties>
-    <property name="obj-id" type="int" value="10"/>
+    <property name="obj-id" type="int" value="8"/>
    </properties>
   </object>
   <object id="2" gid="226" x="3455.33" y="3783.33" width="128" height="192">
@@ -3796,22 +3796,22 @@
   </object>
   <object id="7" gid="213" x="4424" y="4818" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="8" gid="215" x="4198.67" y="4640" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="10" gid="215" x="4574" y="4576" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="11" gid="213" x="4494.67" y="4545.33" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="19" gid="229" x="4096" y="3392" width="384" height="384">
@@ -3821,7 +3821,7 @@
   </object>
   <object id="40" gid="232" x="3776" y="3776" width="320" height="320">
    <properties>
-    <property name="obj-id" type="int" value="10"/>
+    <property name="obj-id" type="int" value="8"/>
    </properties>
   </object>
   <object id="41" gid="227" x="3520" y="3712" width="128" height="192">
@@ -3866,12 +3866,12 @@
   </object>
   <object id="50" gid="217" x="1190" y="3975" width="64" height="192">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="51" gid="230" x="1920" y="2432" width="448" height="448">
    <properties>
-    <property name="obj-id" type="int" value="10"/>
+    <property name="obj-id" type="int" value="8"/>
    </properties>
   </object>
   <object id="52" gid="229" x="1600" y="2176" width="384" height="384">
@@ -3906,7 +3906,7 @@
   </object>
   <object id="58" gid="221" x="1677.33" y="2758.67" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="59" gid="222" x="2390.67" y="2628" width="64" height="128">
@@ -3926,12 +3926,12 @@
   </object>
   <object id="62" gid="221" x="1042.67" y="2729.33" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="63" gid="221" x="1152" y="2432" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="64" gid="221" x="896" y="576" width="128" height="192">
@@ -3956,12 +3956,12 @@
   </object>
   <object id="69" gid="212" x="1568" y="2460" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="70" gid="212" x="1344" y="2752" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="71" gid="212" x="1152" y="1856" width="128" height="192">
@@ -3986,7 +3986,7 @@
   </object>
   <object id="75" gid="220" x="1746.18" y="2827.39" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="76" gid="220" x="949.212" y="1978.91" width="128" height="192">
@@ -4006,7 +4006,7 @@
   </object>
   <object id="79" gid="222" x="1929.7" y="2752.97" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="80" gid="222" x="2317.58" y="2752.97" width="64" height="128">
@@ -4046,7 +4046,7 @@
   </object>
   <object id="87" gid="221" x="1788.61" y="2697.09" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="88" gid="221" x="2137.09" y="2700.12" width="128" height="192">
@@ -4056,12 +4056,12 @@
   </object>
   <object id="89" gid="221" x="1280" y="2688" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="90" gid="221" x="1088" y="2496" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="91" gid="227" x="4140.12" y="1472.85" width="128" height="192">
@@ -4236,32 +4236,32 @@
   </object>
   <object id="207" gid="233" x="4292" y="4591.5" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="208" gid="233" x="4448" y="4591.5" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="210" name="top" gid="235" x="4288" y="4480" width="232" height="80">
    <properties>
-    <property name="obj-id" type="int" value="8"/>
+    <property name="obj-id" type="int" value="7"/>
    </properties>
   </object>
   <object id="212" gid="233" x="1267" y="4067.75" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="213" gid="233" x="1421.67" y="4069.08" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="214" name="top" gid="235" x="1261.67" y="3957.58" width="232" height="80">
    <properties>
-    <property name="obj-id" type="int" value="8"/>
+    <property name="obj-id" type="int" value="7"/>
    </properties>
   </object>
   <object id="346" gid="227" x="3078.67" y="2824" width="128" height="192">
@@ -4286,32 +4286,32 @@
   </object>
   <object id="350" gid="213" x="1482.67" y="3546.67" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="351" gid="213" x="1036" y="4214.67" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="352" gid="213" x="1724" y="4100" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="353" gid="213" x="1673.33" y="4782.67" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="354" gid="213" x="597.333" y="4402.67" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="355" gid="218" x="673.333" y="4458.67" width="64" height="104">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="368" gid="227" x="3072" y="3072" width="128" height="192">
@@ -4541,242 +4541,242 @@
   </object>
   <object id="598" gid="213" x="2496" y="4928" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="599" gid="213" x="2481.33" y="4188" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="600" gid="215" x="2688" y="4160" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="601" gid="215" x="1734" y="4167" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="0"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="602" gid="215" x="1134" y="3914.5" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="604" gid="215" x="1190.33" y="4077.5" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="606" gid="213" x="1497.5" y="4290.17" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="607" gid="213" x="1549.33" y="3913.33" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="608" gid="217" x="1117.33" y="3642.67" width="64" height="192">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="609" gid="213" x="900" y="3917.33" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="627" gid="240" x="1031.67" y="4148.17" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="628" gid="241" x="1118.5" y="3950.17" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="629" gid="241" x="1822.17" y="4183.83" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="630" gid="241" x="1185.67" y="4260.67" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="631" gid="241" x="1660" y="4261.33" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="633" gid="240" x="1119" y="4241.33" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="634" gid="240" x="1848" y="4158" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="635" gid="240" x="1001.33" y="4108" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="639" gid="218" x="935.5" y="4005" width="64" height="104">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="641" gid="217" x="1650" y="3841.5" width="64" height="192">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="642" gid="241" x="904" y="3934" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="643" gid="241" x="862.5" y="3806.5" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="644" gid="240" x="773.5" y="3742" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="645" gid="240" x="847.5" y="4291.5" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="646" gid="241" x="1728.5" y="4210.5" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="647" gid="233" x="1271.83" y="4290.75" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="648" gid="233" x="1418.83" y="4290.75" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="6"/>
    </properties>
   </object>
   <object id="649" name="top" gid="235" x="1261.83" y="4178.58" width="232" height="80">
    <properties>
-    <property name="obj-id" type="int" value="8"/>
+    <property name="obj-id" type="int" value="7"/>
    </properties>
   </object>
   <object id="650" gid="241" x="2222" y="4051" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="651" gid="241" x="1874" y="3496" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="652" gid="241" x="2546" y="3979" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="653" gid="240" x="2093" y="4676" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="654" gid="240" x="1078" y="4482" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="655" gid="240" x="4211.33" y="4563.33" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="656" gid="240" x="4479.33" y="4620.67" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="657" gid="241" x="4264.33" y="4501" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="658" gid="241" x="4265" y="4615" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="659" gid="236" x="3081.33" y="3098" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="660" gid="236" x="3139.33" y="2872.67" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="661" gid="236" x="3733.33" y="3094" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="662" gid="237" x="3361.33" y="3020" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="664" gid="236" x="2771.33" y="2641.33" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="665" gid="237" x="2963.33" y="3235.33" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="666" gid="237" x="2813.33" y="2674.67" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="667" gid="238" x="3724" y="2610" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="668" gid="238" x="3364" y="2270" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="669" gid="239" x="3298.67" y="2349.67" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="670" gid="239" x="4326.67" y="2652.33" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="671" gid="226" x="4692" y="3166.67" width="128" height="192">
@@ -4811,97 +4811,97 @@
   </object>
   <object id="677" gid="237" x="4869.33" y="3610" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="678" gid="237" x="4917.33" y="3108.67" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="679" gid="237" x="4881.33" y="3946" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="680" gid="213" x="4747.67" y="4043.67" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="681" gid="241" x="4839" y="4087" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="682" gid="241" x="4810" y="4069.33" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="683" gid="241" x="4918.67" y="4295.33" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="684" gid="240" x="4821" y="4147.67" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="685" gid="240" x="4786.67" y="4114.33" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="686" gid="215" x="4744.33" y="3964.67" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="0"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="687" gid="239" x="5226.85" y="4272.21" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="688" gid="239" x="4931" y="4506" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="689" gid="239" x="4649" y="5086" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="690" gid="239" x="1073" y="5079" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="691" gid="238" x="1107" y="5108" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="692" gid="238" x="608" y="5029" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="830" gid="240" x="4934" y="4245" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="871" gid="220" x="1780" y="2936.5" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="925" gid="215" x="1761.33" y="3464" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="5"/>
    </properties>
   </object>
   <object id="941" gid="220" x="832" y="2176" width="128" height="192">
@@ -4921,27 +4921,27 @@
   </object>
   <object id="956" gid="239" x="905.333" y="1257.27" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="957" gid="239" x="644" y="1996.67" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="958" gid="238" x="612.667" y="1956.67" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="959" gid="238" x="762" y="2662" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="960" gid="239" x="1101.33" y="2519.33" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="964" gid="227" x="4373" y="1657" width="128" height="192">
@@ -5146,12 +5146,12 @@
   </object>
   <object id="1684" x="704" y="803.75" width="64" height="84">
    <properties>
-    <property name="obj-id" type="int" value="3"/>
+    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="1685" x="4288.25" y="1316.25" width="63.25" height="83.5">
    <properties>
-    <property name="obj-id" type="int" value="4"/>
+    <property name="obj-id" type="int" value="3"/>
    </properties>
   </object>
   <object id="1686" x="1728.33" y="2084.33" width="127" height="81.6667">

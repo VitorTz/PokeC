@@ -63,6 +63,11 @@ void pk::Camera::draw(pk::SystemManager* system_manager, pk::ComponentManager* c
 }
 
 
+const Camera2D& pk::Camera::get_camera() const {
+	return this->camera;
+}
+
+
 void pk::Camera::clear() {
 	for (auto& pair : this->zindex_to_entities) {
 		pair.second.clear();

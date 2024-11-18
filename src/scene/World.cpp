@@ -1,9 +1,11 @@
 #include "Scene.h"
 #include "../ecs/EcsManager.h"
+#include "../util/TiledMap.h"
 
 
 pk::WorldScene::WorldScene() {
 	pk::ECS* ecs = pk::ecs_create(pk::WorldSceneID);
+	pk::tiledmap_load(ecs, pk::WorldSceneID);
 }
 
 

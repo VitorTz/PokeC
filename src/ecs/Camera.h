@@ -41,6 +41,8 @@ namespace pk {
 		void draw(pk::SystemManager* system, pk::ComponentManager* component);
 
 		void clear();
+
+		const Camera2D& get_camera() const;
 	
 		std::size_t size() const;
 	

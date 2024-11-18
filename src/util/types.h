@@ -21,4 +21,29 @@ namespace pk {
 		NumScenes
 	};
 
+	enum ObjectGroupID {
+		EntitiesGroupID,
+		CollisionGroupID,
+		TransitionGroupID,
+		CoastGroupID,
+		MonsterGroupID,
+		GameObjsID,
+		WaterGroupID
+	};
+
+	enum ObjectID {
+		FireArenaID,
+		WaterArenaID,
+		PlantArenaID,
+		TreeID,
+		RockID,
+		PalmID,
+		PillarID,
+		PillarTopID,
+		HouseID,
+		HospitalID,
+		PlayerID,
+		NurseID
+	};
+
 }
