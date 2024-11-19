@@ -78,6 +78,11 @@ void pk::Camera::clear() {
 }
 
 
+void pk::Camera::handle_zoom(const float dt) {
+	this->camera.zoom += GetMouseWheelMove() * dt * 2.0f;
+}
+
+
 std::size_t pk::Camera::size() const {
 	return this->m_size;
 }

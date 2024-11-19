@@ -20,7 +20,7 @@ pk::WaterSystem::WaterSystem() {
 
 void pk::WaterSystem::update([[maybe_unused]] const float dt) {
 	frame++;
-	if (frame > pk::ANIMATION_NORMAL) {
+	if (frame > pk::ANIMATION_WATER_SPEED) {
 		frame = 0;
 		index = (index + 1) % 4;
 	}

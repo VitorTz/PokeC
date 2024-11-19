@@ -36,7 +36,7 @@ def main() -> None:
                         output.write(struct.pack('i', obj.properties.get('terrain')))
                         output.write(struct.pack('i', obj.properties.get('n')))
                         tmp.write(f" {obj.properties.get('terrain')} {obj.properties.get('n')}")                        
-                    if (obj.properties.get("source")):
+                    if (obj.properties.get("source") and tiledgroup.name != "Coast"):
                         imagepath = "./resources/graphics" + obj.properties["source"].split("graphics")[1] + '\0'
                         tmp.write(f" {imagepath}\n")
                         output.write(bytes(imagepath, "ASCII"))

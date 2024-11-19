@@ -40,6 +40,8 @@ namespace pk {
 
 		void draw(pk::SystemManager* system, pk::ComponentManager* component);
 
+		void handle_zoom(const float dt);
+
 		void clear();
 
 		const Camera2D& get_camera() const;

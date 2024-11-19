@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="86" height="86" tilewidth="64" tileheight="64" infinite="0" nextlayerid="17" nextobjectid="2172">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="86" height="86" tilewidth="64" tileheight="64" infinite="0" nextlayerid="17" nextobjectid="2245">
  <properties>
   <property name="map-id" type="int" value="1"/>
  </properties>
@@ -346,31 +346,31 @@
   </object>
   <object id="1730" gid="21269" x="3200" y="2432" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="5"/>
+    <property name="n" type="int" value="3"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1731" gid="21269" x="3200" y="2368" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="5"/>
+    <property name="n" type="int" value="3"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1732" gid="21269" x="3200" y="2496" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="5"/>
+    <property name="n" type="int" value="3"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1733" gid="21269" x="3200" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="5"/>
+    <property name="n" type="int" value="3"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1734" gid="21269" x="3200" y="2624" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="5"/>
+    <property name="n" type="int" value="3"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -386,28 +386,16 @@
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="1946" gid="21246" x="5248" y="2816" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
   <object id="1947" gid="21246" x="5312" y="2816" width="64" height="64">
    <properties>
     <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="1948" gid="21293" x="5248" y="2816" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
   <object id="1949" gid="21296" x="5248" y="2816" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="6"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
   <object id="1950" gid="21250" x="5248" y="2752" width="64" height="64">
@@ -424,37 +412,25 @@
   </object>
   <object id="1952" gid="21246" x="5184" y="2752" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1953" gid="21246" x="5120" y="2752" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1954" gid="21246" x="4992" y="2752" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1955" gid="21246" x="5056" y="2752" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1956" gid="21246" x="4928" y="2752" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1957" gid="21293" x="4928" y="2752" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -472,31 +448,25 @@
   </object>
   <object id="1960" gid="21246" x="4864" y="2688" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1961" gid="21246" x="4800" y="2688" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1962" gid="21246" x="4736" y="2688" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1963" gid="21246" x="4672" y="2688" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1964" gid="21246" x="4608" y="2688" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -514,25 +484,19 @@
   </object>
   <object id="1967" gid="21246" x="4544" y="2624" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1968" gid="21246" x="4480" y="2624" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1969" gid="21246" x="4416" y="2624" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1970" gid="21246" x="4352" y="2624" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -550,19 +514,19 @@
   </object>
   <object id="1973" gid="21246" x="4288" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1974" gid="21246" x="4224" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1975" gid="21246" x="4160" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -574,31 +538,25 @@
   </object>
   <object id="1977" gid="21246" x="4032" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1978" gid="21246" x="4096" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1979" gid="21246" x="3968" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1980" gid="21246" x="3904" y="2560" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1981" gid="21246" x="3840" y="2560" width="64" height="64">
-   <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -616,19 +574,19 @@
   </object>
   <object id="1985" gid="21246" x="3776" y="2496" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1986" gid="21246" x="3712" y="2496" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1987" gid="21246" x="3648" y="2496" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="1"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -664,13 +622,13 @@
   </object>
   <object id="1993" gid="21294" x="3648" y="2752" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1994" gid="21294" x="3712" y="2752" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -688,25 +646,25 @@
   </object>
   <object id="1997" gid="21294" x="3840" y="2816" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1998" gid="21294" x="3904" y="2816" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="1999" gid="21294" x="3968" y="2816" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2000" gid="21294" x="4032" y="2816" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -724,31 +682,31 @@
   </object>
   <object id="2003" gid="21294" x="4160" y="2880" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2004" gid="21294" x="4224" y="2880" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2005" gid="21294" x="4288" y="2880" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2006" gid="21294" x="4352" y="2880" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2007" gid="21294" x="4416" y="2880" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -766,31 +724,31 @@
   </object>
   <object id="2011" gid="21294" x="4544" y="2944" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2012" gid="21294" x="4608" y="2944" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2013" gid="21294" x="4672" y="2944" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2014" gid="21294" x="4736" y="2944" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2015" gid="21250" x="4800" y="2944" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="2"/>
     <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
@@ -802,19 +760,19 @@
   </object>
   <object id="2017" gid="21294" x="4864" y="3008" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2018" gid="21294" x="4928" y="3008" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2019" gid="21294" x="4992" y="3008" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -832,25 +790,25 @@
   </object>
   <object id="2022" gid="21294" x="5120" y="3072" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2023" gid="21294" x="5184" y="3072" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2024" gid="21294" x="5248" y="3072" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
   <object id="2025" gid="21294" x="5312" y="3072" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
@@ -886,7 +844,7 @@
   </object>
   <object id="2032" gid="21310" x="5312" y="4096" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="7"/>
+    <property name="n" type="int" value="8"/>
     <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
@@ -904,7 +862,7 @@
   </object>
   <object id="2035" gid="21310" x="5248" y="4224" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="7"/>
+    <property name="n" type="int" value="8"/>
     <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
@@ -946,7 +904,7 @@
   </object>
   <object id="2042" gid="21310" x="4992" y="4416" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="7"/>
+    <property name="n" type="int" value="8"/>
     <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
@@ -1006,7 +964,7 @@
   </object>
   <object id="2052" gid="21310" x="4864" y="4928" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="7"/>
+    <property name="n" type="int" value="8"/>
     <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
@@ -1030,7 +988,7 @@
   </object>
   <object id="2056" gid="21310" x="4736" y="4992" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="7"/>
+    <property name="n" type="int" value="8"/>
     <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
@@ -1054,7 +1012,7 @@
   </object>
   <object id="2060" gid="21310" x="4608" y="5056" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="7"/>
+    <property name="n" type="int" value="8"/>
     <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
@@ -1480,80 +1438,80 @@
   </object>
   <object id="2131" gid="21283" x="512" y="4800" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2132" gid="21283" x="512" y="4736" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2133" gid="21283" x="512" y="4672" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2135" gid="21283" x="512" y="4608" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2136" gid="21283" x="512" y="4544" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2137" gid="21283" x="512" y="4416" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2138" gid="21283" x="512" y="4352" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2139" gid="21283" x="512" y="4480" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2140" gid="21283" x="512" y="4288" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2141" gid="21283" x="512" y="4160" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2142" gid="21283" x="512" y="4096" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2143" gid="21283" x="512" y="4224" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2144" gid="21283" x="512" y="4032" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2145" gid="21283" x="512" y="3968" width="64" height="64">
@@ -1576,14 +1534,14 @@
   </object>
   <object id="2148" gid="21283" x="448" y="3904" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2149" gid="21283" x="448" y="3840" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2150" gid="21259" x="448" y="3776" width="64" height="64">
@@ -1600,32 +1558,32 @@
   </object>
   <object id="2152" gid="21283" x="384" y="3712" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2153" gid="21283" x="384" y="3648" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2154" gid="21283" x="384" y="3584" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2155" gid="21283" x="384" y="3520" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2156" gid="21283" x="384" y="3456" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="0"/>
-    <property name="terrain" type="int" value="0"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
   <object id="2157" gid="21259" x="384" y="3392" width="64" height="64">
@@ -1696,12 +1654,12 @@
   </object>
   <object id="2171" gid="21294" x="5440" y="3136" width="64" height="64">
    <properties>
-    <property name="n" type="int" value="6"/>
+    <property name="n" type="int" value="7"/>
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="6" name="Monsters" visible="0">
+ <objectgroup id="6" name="Monsters">
   <properties>
    <property name="group-id" type="int" value="4"/>
   </properties>
@@ -3862,7 +3820,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="2" name="GameObjs" visible="0">
+ <objectgroup id="2" name="GameObjs">
   <properties>
    <property name="group-id" type="int" value="5"/>
   </properties>
@@ -4851,26 +4809,6 @@
     <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
-  <object id="667" gid="238" x="3724" y="2610" width="60" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="668" gid="238" x="3364" y="2270" width="60" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="669" gid="239" x="3298.67" y="2349.67" width="56" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="670" gid="239" x="4326.67" y="2652.33" width="56" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
   <object id="671" gid="226" x="4692" y="3166.67" width="128" height="192">
    <properties>
     <property name="obj-id" type="int" value="3"/>
@@ -4949,36 +4887,6 @@
   <object id="686" gid="215" x="4744.33" y="3964.67" width="64" height="128">
    <properties>
     <property name="obj-id" type="int" value="5"/>
-   </properties>
-  </object>
-  <object id="687" gid="239" x="5226.85" y="4272.21" width="56" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="688" gid="239" x="4931" y="4506" width="56" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="689" gid="239" x="4649" y="5086" width="56" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="690" gid="239" x="1073" y="5079" width="56" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="691" gid="238" x="1107" y="5108" width="60" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
-   </properties>
-  </object>
-  <object id="692" gid="238" x="608" y="5029" width="60" height="60">
-   <properties>
-    <property name="obj-id" type="int" value="4"/>
    </properties>
   </object>
   <object id="830" gid="240" x="4934" y="4245" width="60" height="60">
@@ -5227,7 +5135,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="5" name="Transition" visible="0">
+ <objectgroup id="5" name="Transition">
   <properties>
    <property name="group-id" type="int" value="2"/>
   </properties>
@@ -5262,7 +5170,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="14" name="Collision" visible="0">
+ <objectgroup id="14" name="Collision">
   <properties>
    <property name="group-id" type="int" value="1"/>
   </properties>
@@ -5463,10 +5371,7 @@
   <object id="1565" x="4737" y="1550.5" width="9" height="5.5"/>
   <object id="1566" x="4754" y="1538.5" width="12" height="3.5"/>
   <object id="1567" x="4777" y="1528.5" width="36" height="4.5"/>
-  <object id="1568" x="3276" y="2329.33" width="93.3333" height="268"/>
-  <object id="1569" x="3345.33" y="2256" width="149.333" height="36"/>
-  <object id="1570" x="3412" y="2190.67" width="141.333" height="36"/>
-  <object id="1571" x="3473.33" y="2133.33" width="93.3333" height="45.3333"/>
+  <object id="1568" x="3215" y="2313.33" width="48.3333" height="327"/>
   <object id="1249" x="0" y="0" width="2.5" height="5504"/>
   <object id="1275" x="0" y="0" width="5494.29" height="2.5"/>
   <object id="1276" x="358.667" y="451.333" width="19.3333" height="191.333"/>
@@ -5546,11 +5451,11 @@
   <object id="1377" x="2316" y="213.333" width="41.3333" height="104"/>
   <object id="1378" x="2181.33" y="17.3333" width="44" height="86.6667"/>
   <object id="1379" x="2252" y="144" width="44" height="48"/>
-  <object id="1251" x="11" y="3085" width="45" height="46"/>
-  <object id="1253" x="71.5" y="3147" width="45" height="46"/>
-  <object id="1254" x="137.5" y="3211" width="99" height="46"/>
-  <object id="1255" x="264.5" y="3277" width="92" height="46"/>
-  <object id="1256" x="391.5" y="3342" width="45" height="364"/>
+  <object id="1251" x="-1" y="3102.33" width="45" height="46"/>
+  <object id="1253" x="59.5" y="3164.33" width="45" height="46"/>
+  <object id="1254" x="132.167" y="3217.67" width="99" height="46"/>
+  <object id="1255" x="285.833" y="3303.67" width="82.6667" height="34"/>
+  <object id="1256" x="391.5" y="3370" width="38.3333" height="336"/>
   <object id="1340" x="1356.67" y="1877.33" width="39.3333" height="210"/>
   <object id="1341" x="1295.33" y="2064.67" width="39.3333" height="430.667"/>
   <object id="1342" x="1235.33" y="2510.67" width="88.6667" height="38"/>
@@ -5576,15 +5481,15 @@
   <object id="1362" x="2828" y="2068" width="36" height="205.333"/>
   <object id="1257" x="454.5" y="3723" width="45" height="176"/>
   <object id="1258" x="517.5" y="3922" width="45" height="872"/>
-  <object id="1259" x="577.5" y="4811" width="45" height="46"/>
-  <object id="1260" x="641.5" y="4876" width="45" height="46"/>
-  <object id="1261" x="715.5" y="4938" width="415" height="46"/>
+  <object id="1259" x="581.25" y="4849.5" width="45" height="46"/>
+  <object id="1260" x="629.5" y="4888.75" width="37.25" height="36"/>
+  <object id="1261" x="715.5" y="4947" width="394" height="37"/>
   <object id="1262" x="1159.5" y="5002" width="3443" height="46"/>
-  <object id="1263" x="4620.5" y="4942" width="45" height="105"/>
-  <object id="1264" x="4749.5" y="4876" width="111" height="75"/>
-  <object id="1265" x="4683.5" y="4935" width="45" height="46"/>
+  <object id="1263" x="4629.5" y="4967" width="36" height="80"/>
+  <object id="1264" x="4785.5" y="4887" width="75" height="24"/>
+  <object id="1265" x="4688.5" y="4942" width="45" height="46"/>
   <object id="1267" x="4875.5" y="4432" width="45" height="489"/>
-  <object id="1268" x="4942.5" y="4366" width="45" height="46"/>
+  <object id="1268" x="4927.5" y="4366" width="60" height="46"/>
   <object id="1269" x="5005.5" y="4237" width="45" height="130"/>
   <object id="1270" x="5069.5" y="4169" width="172" height="46"/>
   <object id="1271" x="5258.5" y="4108" width="45" height="107"/>
@@ -5621,17 +5526,6 @@
   <object id="1440" x="3880" y="1426.67" width="16" height="58.6667"/>
   <object id="1441" x="3909.33" y="1496" width="18.6667" height="13.3333"/>
   <object id="1442" x="3937.33" y="1518.67" width="9.33333" height="5.33333"/>
-  <object id="1443" x="3660" y="2513.33" width="165.333" height="156"/>
-  <object id="1444" x="3853.33" y="2580" width="488" height="156"/>
-  <object id="1445" x="4176" y="2744" width="740" height="65.3333"/>
-  <object id="1446" x="4360" y="2638.67" width="232" height="89.3333"/>
-  <object id="1447" x="4617.33" y="2701.33" width="289.333" height="32"/>
-  <object id="1448" x="4564" y="2820" width="394.667" height="48"/>
-  <object id="1449" x="4881.33" y="2877.33" width="608" height="57.3333"/>
-  <object id="1450" x="4932" y="2769.33" width="301.333" height="108"/>
-  <object id="1451" x="5137.33" y="2936" width="361.333" height="60"/>
-  <object id="1452" x="5457.33" y="3012" width="40" height="49.3333"/>
-  <object id="1453" x="5254.67" y="2828" width="232" height="42.6667"/>
   <object id="1455" x="4742.42" y="3406.06" width="42.4848" height="415.152"/>
   <object id="1456" x="4621.3" y="3088.03" width="38.5152" height="213.97"/>
   <object id="1457" x="4684.85" y="3284.85" width="36.9394" height="136.364"/>
@@ -5647,81 +5541,67 @@
   <object id="1578" x="3594" y="3023" width="186" height="10"/>
   <object id="1579" x="3798" y="3040" width="18" height="12"/>
   <object id="1580" x="3830" y="3082" width="253" height="14"/>
+  <object id="2172" x="5017" y="4195" width="36" height="26"/>
+  <object id="2173" x="5277" y="4075" width="36" height="26"/>
+  <object id="2174" x="5343" y="4005" width="36" height="26"/>
+  <object id="2175" x="4750.5" y="4924" width="39" height="25"/>
+  <object id="2176" x="1123" y="4978" width="16" height="34"/>
+  <object id="2177" x="648.75" y="4929" width="45" height="46"/>
+  <object id="2178" x="543.375" y="4817" width="37.25" height="36"/>
+  <object id="2194" x="3599" y="2511" width="31" height="182"/>
+  <object id="2195" x="3623" y="2704" width="149" height="32"/>
+  <object id="2196" x="3799" y="2744" width="28" height="25"/>
+  <object id="2197" x="3823" y="2777" width="287" height="20"/>
+  <object id="2198" x="4119" y="2804" width="34" height="42"/>
+  <object id="2199" x="4168" y="2844" width="316" height="14"/>
+  <object id="2200" x="4509" y="2864" width="39" height="49"/>
+  <object id="2201" x="4571" y="2904" width="253" height="21"/>
+  <object id="2203" x="4821" y="2954" width="27" height="31"/>
+  <object id="2208" x="3656" y="2451" width="164" height="41"/>
+  <object id="2209" x="3625" y="2477" width="26" height="13"/>
+  <object id="2210" x="3829" y="2487" width="46" height="58"/>
+  <object id="2211" x="3894" y="2520" width="477" height="33"/>
+  <object id="2212" x="4374" y="2556" width="19" height="54"/>
+  <object id="2213" x="4416" y="2583" width="184" height="31"/>
+  <object id="2214" x="4620" y="2610" width="32" height="42"/>
+  <object id="2215" x="4662" y="2640" width="260" height="32"/>
+  <object id="2216" x="4942" y="2664" width="24" height="54"/>
+  <object id="2217" x="4979" y="2701" width="15" height="28"/>
+  <object id="2218" x="4994" y="2703" width="246" height="26"/>
+  <object id="2219" x="5256" y="2722" width="19" height="38"/>
+  <object id="2220" x="5286" y="2760" width="19" height="29"/>
+  <object id="2221" x="5322" y="2769" width="180" height="12"/>
+  <object id="2222" x="221.5" y="3275.67" width="45" height="46"/>
+  <object id="2232" x="3250" y="2642" width="149" height="24"/>
+  <object id="2233" x="3406" y="2350" width="30" height="308"/>
+  <object id="2234" x="3428" y="2316" width="113" height="31"/>
+  <object id="2235" x="3532" y="2260" width="26" height="71"/>
+  <object id="2236" x="3547" y="2233" width="74" height="42"/>
+  <object id="2237" x="3604" y="2117" width="25" height="106"/>
+  <object id="2238" x="3444" y="2070" width="150" height="38"/>
+  <object id="2239" x="3410" y="2114" width="37" height="22"/>
+  <object id="2240" x="3371" y="2146" width="49" height="18"/>
+  <object id="2241" x="3345" y="2175" width="33" height="34"/>
+  <object id="2242" x="3300" y="2213" width="29" height="11"/>
+  <object id="2243" x="3234" y="2274" width="31" height="20"/>
+  <object id="2244" x="3275" y="2253" width="34" height="8"/>
  </objectgroup>
  <objectgroup id="15" name="Water" visible="0">
   <properties>
    <property name="group-id" type="int" value="6"/>
   </properties>
-  <object id="1584" x="0" y="3328.01" width="256" height="2175.99"/>
-  <object id="1591" x="0" y="3264" width="191.913" height="64"/>
+  <object id="1591" x="0" y="3264" width="192" height="64"/>
   <object id="1592" x="0" y="3200" width="64" height="64"/>
-  <object id="1594" x="575.011" y="5056" width="4929.98" height="448"/>
-  <object id="1595" x="576" y="4992" width="511.956" height="64"/>
+  <object id="1594" x="576" y="5056" width="4929.98" height="448"/>
+  <object id="1595" x="576" y="4992" width="512" height="64"/>
   <object id="1597" x="576" y="4928" width="64" height="64"/>
   <object id="1598" x="4928" y="4416" width="576" height="640"/>
   <object id="1599" x="4672" y="4992" width="256" height="64"/>
   <object id="1600" x="4800" y="4928" width="128" height="64"/>
-  <object id="1601" x="5056.04" y="4224" width="447.958" height="192"/>
-  <object id="1602" x="5312.01" y="4096" width="191.992" height="128"/>
-  <object id="1603" x="5375.98" y="4032" width="128.021" height="64"/>
-  <object id="1607" x="256" y="4864.01" width="320" height="639.989"/>
-  <object id="1608" x="256" y="3392" width="127.969" height="511.997"/>
-  <object id="1609" x="384" y="3776" width="64" height="127.997"/>
-  <object id="1611" x="3648" y="2496" width="192" height="192">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1612" x="3840" y="2560" width="512" height="192">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1613" x="4352" y="2624" width="256" height="128">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1614" x="4160" y="2752" width="448" height="64">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1615" x="4608" y="2688" width="320" height="192">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1616" x="4544" y="2816" width="64" height="64">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1617" x="4928" y="2752" width="320" height="192">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1618" x="4864" y="2880" width="64" height="64">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1619" x="5248" y="2816" width="256" height="192">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1620" x="5120" y="2944" width="128" height="64">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
-  <object id="1621" x="5440" y="3008" width="64" height="64">
-   <properties>
-    <property name="terrain" type="int" value="2"/>
-   </properties>
-  </object>
+  <object id="1601" x="5056" y="4224" width="448" height="192"/>
+  <object id="1602" x="5312.01" y="4096" width="192" height="128"/>
+  <object id="1603" x="5375.98" y="4032" width="128" height="64"/>
+  <object id="1607" x="256" y="4864.01" width="320" height="640"/>
   <object id="1622" x="3264" y="2304" width="128" height="320">
    <properties>
     <property name="terrain" type="int" value="2"/>
@@ -5742,8 +5622,24 @@
     <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="2168" x="256" y="3328" width="64" height="64"/>
-  <object id="2169" x="256" y="3904" width="192" height="960.016"/>
-  <object id="2170" x="448" y="3968" width="64" height="896.005"/>
+  <object id="2179" x="4608" y="2688" width="320" height="192"/>
+  <object id="2180" x="4928" y="2752" width="320" height="192"/>
+  <object id="2181" x="4864" y="2880" width="64" height="64"/>
+  <object id="2182" x="5248" y="2816" width="256" height="192"/>
+  <object id="2183" x="5120" y="2944" width="128" height="64"/>
+  <object id="2184" x="5440" y="3008" width="64" height="64"/>
+  <object id="2185" x="4160" y="2624" width="448" height="192"/>
+  <object id="2186" x="4544" y="2816" width="64" height="64"/>
+  <object id="2187" x="3648" y="2560" width="512" height="128"/>
+  <object id="2188" x="4160" y="2560" width="192" height="64"/>
+  <object id="2189" x="3840" y="2688" width="320" height="64"/>
+  <object id="2190" x="3648" y="2496" width="192" height="64"/>
+  <object id="2224" x="0" y="4608" width="256" height="896"/>
+  <object id="2225" x="0" y="3328" width="256" height="1280"/>
+  <object id="2227" x="256" y="3328" width="64" height="64"/>
+  <object id="2228" x="256" y="3392" width="128" height="1472"/>
+  <object id="2229" x="384" y="3776" width="64" height="1088"/>
+  <object id="2230" x="448" y="3968" width="64" height="896"/>
+  <object id="2231" x="3476" y="3792"/>
  </objectgroup>
 </map>

@@ -43,9 +43,10 @@ namespace pk {
 	constexpr Vector2 PLAYER_ACTION_BOX{ pk::TILE_SIZE * 1.8f, pk::TILE_SIZE};
 
 	// Animation
-	constexpr std::uint8_t ANIMATION_SLOW{ 12 };
+	constexpr std::uint8_t ANIMATION_SLOW{ 16 };
 	constexpr std::uint8_t ANIMATION_NORMAL{ 8 };
 	constexpr std::uint8_t ANIMATION_FAST{ 4 };
+	constexpr std::uint8_t ANIMATION_WATER_SPEED{ pk::ANIMATION_SLOW };
 
 	// Camera
 	constexpr pk::zindex_t CAMERA_ZINDEX_MIN{ 0 };

@@ -46,7 +46,7 @@ namespace pk {
 		NurseID		
 	};
 
-	enum CoastType {
+	enum CoastType {		
 		Sand0,
 		Sand1,
 		Forest0,

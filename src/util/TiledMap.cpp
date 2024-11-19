@@ -137,7 +137,7 @@ static void load_coast(pk::ECS* ecs, const tile_t& tile, FILE* file) {
 	int n;
 	fread(&coast_type, sizeof(int), 1, file);
 	fread(&n, sizeof(int), 1, file);
-	const pk::entity_t e = ecs->entity_create(pk::CAMERA_ZINDEX_WATER, true);
+	const pk::entity_t e = ecs->entity_create(pk::CAMERA_ZINDEX_WATER, true, tile.x, tile.y);
 	ecs->component_insert<pk::coast_t>(
 		e,
 		pk::coast_t{
@@ -176,6 +176,7 @@ void pk::tiledmap_load(pk::ECS* ecs, const pk::SceneID scene_id) {
 					ecs->add_transition((pk::SceneID) tile.id, Rectangle{ tile.x, tile.y, tile.width, tile.height });
 					break;
 				case pk::CoastGroupID:
+					load_coast(ecs, tile, file);
 					break;
 				case pk::MonsterGroupID:
 					pk::readstr(tile.imagepath, file);

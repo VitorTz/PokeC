@@ -147,6 +147,10 @@ namespace pk {
 				this->entity->entity_destroy(e);
 				this->system->entity_destroy(e);
 			}
+
+			if (pk::DEBUG_MODE) {				
+				this->camera->handle_zoom(dt);
+			}
 		}
 
 		void draw() {
