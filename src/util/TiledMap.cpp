@@ -132,6 +132,22 @@ static void load_entity(pk::ECS* ecs, const tile_t& tile) {
 	}
 }
 
+static void load_coast(pk::ECS* ecs, const tile_t& tile, FILE* file) {
+	int coast_type;
+	int n;
+	fread(&coast_type, sizeof(int), 1, file);
+	fread(&n, sizeof(int), 1, file);
+	const pk::entity_t e = ecs->entity_create(pk::CAMERA_ZINDEX_WATER, true);
+	ecs->component_insert<pk::coast_t>(
+		e,
+		pk::coast_t{
+			static_cast<pk::CoastType>(coast_type),
+			static_cast<std::uint8_t>(n / 3),
+			static_cast<std::uint8_t>(n % 3)
+		}
+	);
+}
+
 
 void pk::tiledmap_load(pk::ECS* ecs, const pk::SceneID scene_id) {
 	const pk::tiled_map_info_t& info = maps[scene_id];

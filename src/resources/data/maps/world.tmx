@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="86" height="86" tilewidth="64" tileheight="64" infinite="0" nextlayerid="17" nextobjectid="1689">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="86" height="86" tilewidth="64" tileheight="64" infinite="0" nextlayerid="17" nextobjectid="2172">
  <properties>
   <property name="map-id" type="int" value="1"/>
  </properties>
@@ -18,7 +18,8 @@
   </tile>
  </tileset>
  <tileset firstgid="245" source="../tilesets/pokemon-tileset.tsx"/>
- <layer id="1" name="Terrain" width="86" height="86">
+ <tileset firstgid="21245" source="../tilesets/coast.tsx"/>
+ <layer id="1" name="Terrain" width="86" height="86" visible="0">
   <data encoding="csv">
 195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,196,132,132,136,132,132,132,136,132,123,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
 195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,195,196,132,132,147,126,132,132,136,132,132,123,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,42,
@@ -96,7 +97,7 @@
 0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,114,115,115,115,93,12,91,115,117,115,115,115,115,115,115,115,116,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,114,115,116,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,3747,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,102,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,12,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
 0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
@@ -189,1424 +190,1514 @@
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="9" name="Coast" visible="0" locked="1">
+ <objectgroup id="9" name="Coast">
   <properties>
    <property name="group-id" type="int" value="3"/>
   </properties>
-  <object id="130" name="coast" x="4224" y="4992" width="64" height="64">
+  <object id="1702" gid="21293" x="3200" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="131" name="coast" x="4288" y="4992" width="64" height="64">
+  <object id="1703" gid="21294" x="3264" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="132" name="coast" x="4352" y="4992" width="64" height="64">
+  <object id="1704" gid="21294" x="3328" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="133" name="coast" x="4416" y="4992" width="64" height="64">
+  <object id="1705" gid="21295" x="3392" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="8"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="134" name="coast" x="4480" y="4992" width="64" height="64">
+  <object id="1706" gid="21271" x="3392" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="135" name="coast" x="4160" y="4992" width="64" height="64">
+  <object id="1707" gid="21271" x="3392" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="143" name="coast" x="3648" y="2688" width="64" height="64">
+  <object id="1708" gid="21271" x="3392" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="144" name="coast" x="3712" y="2688" width="64" height="64">
+  <object id="1709" gid="21271" x="3392" y="2432" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="145" name="coast" x="3776" y="2688" width="64" height="64">
+  <object id="1711" gid="21248" x="3392" y="2368" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="147" name="coast" x="3648" y="2432" width="64" height="64">
+  <object id="1712" gid="21294" x="3456" y="2368" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="148" name="coast" x="3712" y="2432" width="64" height="64">
+  <object id="1713" gid="21295" x="3520" y="2368" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="8"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="149" name="coast" x="3776" y="2432" width="64" height="64">
+  <object id="1714" gid="21248" x="3520" y="2304" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="150" name="coast" x="3584" y="2496" width="64" height="64">
+  <object id="1715" gid="21295" x="3584" y="2304" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="8"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="151" name="coast" x="3584" y="2560" width="64" height="64">
+  <object id="1716" gid="21271" x="3584" y="2240" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="152" name="coast" x="3584" y="2624" width="64" height="64">
+  <object id="1717" gid="21271" x="3584" y="2176" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="155" name="coast" x="3584" y="2688" width="64" height="64">
+  <object id="1718" gid="21247" x="3584" y="2112" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="156" name="coast" x="3584" y="2432" width="64" height="64">
+  <object id="1719" gid="21246" x="3520" y="2112" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="157" name="coast" x="3840" y="2432" width="64" height="64">
+  <object id="1720" gid="21246" x="3456" y="2112" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="159" name="coast" x="3904" y="2496" width="64" height="64">
+  <object id="1721" gid="21245" x="3392" y="2112" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="160" name="coast" x="3840" y="2496" width="64" height="64">
+  <object id="1722" gid="21298" x="3392" y="2176" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="8"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="163" name="coast" x="5440" y="3968" width="64" height="64">
+  <object id="1724" gid="21245" x="3328" y="2176" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="164" name="coast" x="5184" y="4160" width="64" height="64">
+  <object id="1725" gid="21298" x="3328" y="2240" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="8"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="165" name="coast" x="5120" y="4160" width="64" height="64">
+  <object id="1726" gid="21245" x="3264" y="2240" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="166" name="coast" x="5376" y="3968" width="64" height="64">
+  <object id="1727" gid="21298" x="3264" y="2304" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="8"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="167" name="coast" x="5312" y="4032" width="64" height="64">
+  <object id="1728" gid="21245" x="3200" y="2304" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="168" name="coast" x="5248" y="4096" width="64" height="64">
+  <object id="1730" gid="21269" x="3200" y="2432" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="169" name="coast" x="5056" y="4160" width="64" height="64">
+  <object id="1731" gid="21269" x="3200" y="2368" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="170" name="coast" x="4992" y="4224" width="64" height="64">
+  <object id="1732" gid="21269" x="3200" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="171" name="coast" x="5376" y="4032" width="64" height="64">
+  <object id="1733" gid="21269" x="3200" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="172" name="coast" x="5312" y="4096" width="64" height="64">
+  <object id="1734" gid="21269" x="3200" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="5"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="173" name="coast" x="5248" y="4160" width="64" height="64">
+  <object id="1944" gid="21246" x="5376" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="174" name="coast" x="5056" y="4224" width="64" height="64">
+  <object id="1945" gid="21246" x="5440" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="182" name="coast" x="4992" y="4288" width="64" height="64">
+  <object id="1946" gid="21246" x="5248" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="183" name="coast" x="4864" y="4480" width="64" height="64">
+  <object id="1947" gid="21246" x="5312" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="184" name="coast" x="4864" y="4544" width="64" height="64">
+  <object id="1948" gid="21293" x="5248" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="185" name="coast" x="4864" y="4608" width="64" height="64">
+  <object id="1949" gid="21296" x="5248" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="6"/>
    </properties>
   </object>
-  <object id="186" name="coast" x="4864" y="4672" width="64" height="64">
+  <object id="1950" gid="21250" x="5248" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="187" name="coast" x="4864" y="4736" width="64" height="64">
+  <object id="1951" gid="21247" x="5248" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="188" name="coast" x="4864" y="4800" width="64" height="64">
+  <object id="1952" gid="21246" x="5184" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="189" name="coast" x="4544" y="4992" width="64" height="64">
+  <object id="1953" gid="21246" x="5120" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="190" name="coast" x="4992" y="4352" width="64" height="64">
+  <object id="1954" gid="21246" x="4992" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="191" name="coast" x="4928" y="4416" width="64" height="64">
+  <object id="1955" gid="21246" x="5056" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="192" name="coast" x="4928" y="4352" width="64" height="64">
+  <object id="1956" gid="21246" x="4928" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="193" name="coast" x="4864" y="4416" width="64" height="64">
+  <object id="1957" gid="21293" x="4928" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="194" name="coast" x="4864" y="4864" width="64" height="64">
+  <object id="1958" gid="21296" x="4928" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="195" name="coast" x="4736" y="4928" width="64" height="64">
+  <object id="1959" gid="21247" x="4928" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="196" name="coast" x="4608" y="4992" width="64" height="64">
+  <object id="1960" gid="21246" x="4864" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="197" name="coast" x="4736" y="4864" width="64" height="64">
+  <object id="1961" gid="21246" x="4800" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="198" name="coast" x="4608" y="4928" width="64" height="64">
+  <object id="1962" gid="21246" x="4736" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="199" name="coast" x="4672" y="4928" width="64" height="64">
+  <object id="1963" gid="21246" x="4672" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="200" name="coast" x="4800" y="4864" width="64" height="64">
+  <object id="1964" gid="21246" x="4608" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="235" name="coast" x="3840" y="4992" width="64" height="64">
+  <object id="1965" gid="21296" x="4608" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="236" name="coast" x="3904" y="4992" width="64" height="64">
+  <object id="1966" gid="21247" x="4608" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="237" name="coast" x="3968" y="4992" width="64" height="64">
+  <object id="1967" gid="21246" x="4544" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="238" name="coast" x="4032" y="4992" width="64" height="64">
+  <object id="1968" gid="21246" x="4480" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="239" name="coast" x="4096" y="4992" width="64" height="64">
+  <object id="1969" gid="21246" x="4416" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="240" name="coast" x="3776" y="4992" width="64" height="64">
+  <object id="1970" gid="21246" x="4352" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="241" name="coast" x="3456" y="4992" width="64" height="64">
+  <object id="1971" gid="21296" x="4352" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="242" name="coast" x="3520" y="4992" width="64" height="64">
+  <object id="1972" gid="21247" x="4352" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="243" name="coast" x="3584" y="4992" width="64" height="64">
+  <object id="1973" gid="21246" x="4288" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="244" name="coast" x="3648" y="4992" width="64" height="64">
+  <object id="1974" gid="21246" x="4224" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="245" name="coast" x="3712" y="4992" width="64" height="64">
+  <object id="1975" gid="21246" x="4160" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="246" name="coast" x="3392" y="4992" width="64" height="64">
+  <object id="1976" gid="21246" x="4032" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="247" name="coast" x="3072" y="4992" width="64" height="64">
+  <object id="1977" gid="21246" x="4032" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="248" name="coast" x="3136" y="4992" width="64" height="64">
+  <object id="1978" gid="21246" x="4096" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="249" name="coast" x="3200" y="4992" width="64" height="64">
+  <object id="1979" gid="21246" x="3968" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="250" name="coast" x="3264" y="4992" width="64" height="64">
+  <object id="1980" gid="21246" x="3904" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="251" name="coast" x="3328" y="4992" width="64" height="64">
+  <object id="1981" gid="21246" x="3840" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="252" name="coast" x="3008" y="4992" width="64" height="64">
+  <object id="1983" gid="21296" x="3840" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="253" name="coast" x="2688" y="4992" width="64" height="64">
+  <object id="1984" gid="21247" x="3840" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="254" name="coast" x="2752" y="4992" width="64" height="64">
+  <object id="1985" gid="21246" x="3776" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="255" name="coast" x="2816" y="4992" width="64" height="64">
+  <object id="1986" gid="21246" x="3712" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="256" name="coast" x="2880" y="4992" width="64" height="64">
+  <object id="1987" gid="21246" x="3648" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="257" name="coast" x="2944" y="4992" width="64" height="64">
+  <object id="1988" gid="21245" x="3584" y="2496" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="258" name="coast" x="2624" y="4992" width="64" height="64">
+  <object id="1989" gid="21269" x="3584" y="2560" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="259" name="coast" x="2304" y="4992" width="64" height="64">
+  <object id="1990" gid="21269" x="3584" y="2624" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="260" name="coast" x="2368" y="4992" width="64" height="64">
+  <object id="1991" gid="21269" x="3584" y="2688" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="261" name="coast" x="2432" y="4992" width="64" height="64">
+  <object id="1992" gid="21293" x="3584" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="262" name="coast" x="2496" y="4992" width="64" height="64">
+  <object id="1993" gid="21294" x="3648" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="263" name="coast" x="2560" y="4992" width="64" height="64">
+  <object id="1994" gid="21294" x="3712" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="264" name="coast" x="2240" y="4992" width="64" height="64">
+  <object id="1995" gid="21250" x="3776" y="2752" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="265" name="coast" x="1920" y="4992" width="64" height="64">
+  <object id="1996" gid="21293" x="3776" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="266" name="coast" x="1984" y="4992" width="64" height="64">
+  <object id="1997" gid="21294" x="3840" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="267" name="coast" x="2048" y="4992" width="64" height="64">
+  <object id="1998" gid="21294" x="3904" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="268" name="coast" x="2112" y="4992" width="64" height="64">
+  <object id="1999" gid="21294" x="3968" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="269" name="coast" x="2176" y="4992" width="64" height="64">
+  <object id="2000" gid="21294" x="4032" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="270" name="coast" x="1856" y="4992" width="64" height="64">
+  <object id="2001" gid="21250" x="4096" y="2816" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="271" name="coast" x="1536" y="4992" width="64" height="64">
+  <object id="2002" gid="21293" x="4096" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="272" name="coast" x="1600" y="4992" width="64" height="64">
+  <object id="2003" gid="21294" x="4160" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="273" name="coast" x="1664" y="4992" width="64" height="64">
+  <object id="2004" gid="21294" x="4224" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="274" name="coast" x="1728" y="4992" width="64" height="64">
+  <object id="2005" gid="21294" x="4288" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="275" name="coast" x="1792" y="4992" width="64" height="64">
+  <object id="2006" gid="21294" x="4352" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="276" name="coast" x="1472" y="4992" width="64" height="64">
+  <object id="2007" gid="21294" x="4416" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="277" name="coast" x="1024" y="4928" width="64" height="64">
+  <object id="2009" gid="21250" x="4480" y="2880" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="278" name="coast" x="1216" y="4992" width="64" height="64">
+  <object id="2010" gid="21293" x="4480" y="2944" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="279" name="coast" x="1280" y="4992" width="64" height="64">
+  <object id="2011" gid="21294" x="4544" y="2944" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="280" name="coast" x="1344" y="4992" width="64" height="64">
+  <object id="2012" gid="21294" x="4608" y="2944" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="281" name="coast" x="1408" y="4992" width="64" height="64">
+  <object id="2013" gid="21294" x="4672" y="2944" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="282" name="coast" x="960" y="4928" width="64" height="64">
+  <object id="2014" gid="21294" x="4736" y="2944" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="285" name="coast" x="768" y="4928" width="64" height="64">
+  <object id="2015" gid="21250" x="4800" y="2944" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="286" name="coast" x="832" y="4928" width="64" height="64">
+  <object id="2016" gid="21293" x="4800" y="3008" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="287" name="coast" x="896" y="4928" width="64" height="64">
+  <object id="2017" gid="21294" x="4864" y="3008" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="289" name="coast" x="1088" y="4928" width="64" height="64">
+  <object id="2018" gid="21294" x="4928" y="3008" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="290" name="coast" x="1088" y="4992" width="64" height="64">
+  <object id="2019" gid="21294" x="4992" y="3008" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="291" name="coast" x="1152" y="4992" width="64" height="64">
+  <object id="2020" gid="21250" x="5056" y="3008" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="292" name="coast" x="640" y="4928" width="64" height="64">
+  <object id="2021" gid="21293" x="5056" y="3072" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="293" name="coast" x="576" y="4864" width="64" height="64">
+  <object id="2022" gid="21294" x="5120" y="3072" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="294" name="coast" x="512" y="4800" width="64" height="64">
+  <object id="2023" gid="21294" x="5184" y="3072" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="295" name="coast" x="576" y="4800" width="64" height="64">
+  <object id="2024" gid="21294" x="5248" y="3072" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="296" name="coast" x="640" y="4864" width="64" height="64">
+  <object id="2025" gid="21294" x="5312" y="3072" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="297" name="coast" x="704" y="4928" width="64" height="64">
+  <object id="2026" gid="21250" x="5376" y="3072" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="3"/>
    </properties>
   </object>
-  <object id="298" name="coast" x="512" y="4736" width="64" height="64">
+  <object id="2027" gid="21293" x="5376" y="3136" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
-  <object id="299" name="coast" x="512" y="4672" width="64" height="64">
+  <object id="2029" gid="21258" x="5440" y="4032" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="300" name="coast" x="512" y="4544" width="64" height="64">
+  <object id="2030" gid="21258" x="5376" y="4032" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="301" name="coast" x="512" y="4608" width="64" height="64">
+  <object id="2031" gid="21257" x="5312" y="4032" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="302" name="coast" x="512" y="4480" width="64" height="64">
+  <object id="2032" gid="21310" x="5312" y="4096" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="303" name="coast" x="512" y="4416" width="64" height="64">
+  <object id="2033" gid="21257" x="5248" y="4096" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="304" name="coast" x="512" y="4352" width="64" height="64">
+  <object id="2034" gid="21281" x="5248" y="4160" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="305" name="coast" x="512" y="4224" width="64" height="64">
+  <object id="2035" gid="21310" x="5248" y="4224" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="306" name="coast" x="512" y="4288" width="64" height="64">
+  <object id="2036" gid="21258" x="5184" y="4224" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="307" name="coast" x="512" y="4160" width="64" height="64">
+  <object id="2037" gid="21258" x="5120" y="4224" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="308" name="coast" x="448" y="3840" width="64" height="64">
+  <object id="2038" gid="21258" x="5056" y="4224" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="309" name="coast" x="448" y="3776" width="64" height="64">
+  <object id="2039" gid="21257" x="4992" y="4224" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="310" name="coast" x="512" y="4032" width="64" height="64">
+  <object id="2040" gid="21281" x="4992" y="4288" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="311" name="coast" x="512" y="4096" width="64" height="64">
+  <object id="2041" gid="21281" x="4992" y="4352" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="312" name="coast" x="512" y="3968" width="64" height="64">
+  <object id="2042" gid="21310" x="4992" y="4416" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="313" name="coast" x="384" y="3648" width="64" height="64">
+  <object id="2043" gid="21258" x="4928" y="4416" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="314" name="coast" x="384" y="3584" width="64" height="64">
+  <object id="2044" gid="21257" x="4864" y="4416" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="315" name="coast" x="384" y="3456" width="64" height="64">
+  <object id="2045" gid="21281" x="4864" y="4480" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="316" name="coast" x="384" y="3520" width="64" height="64">
+  <object id="2046" gid="21281" x="4864" y="4544" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="317" name="coast" x="384" y="3392" width="64" height="64">
+  <object id="2047" gid="21281" x="4864" y="4608" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="318" name="coast" x="448" y="3904" width="64" height="64">
+  <object id="2048" gid="21281" x="4864" y="4672" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="319" name="coast" x="384" y="3712" width="64" height="64">
+  <object id="2049" gid="21281" x="4864" y="4736" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="320" name="coast" x="320" y="3328" width="64" height="64">
+  <object id="2050" gid="21281" x="4864" y="4800" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="321" name="coast" x="192" y="3264" width="64" height="64">
+  <object id="2051" gid="21281" x="4864" y="4864" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="3"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="322" name="coast" x="64" y="3200" width="64" height="64">
+  <object id="2052" gid="21310" x="4864" y="4928" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="323" name="coast" x="0" y="3136" width="64" height="64">
+  <object id="2053" gid="21258" x="4800" y="4928" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="sand_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="324" name="coast" x="128" y="3200" width="64" height="64">
+  <object id="2054" gid="21258" x="4736" y="4928" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="325" name="coast" x="256" y="3264" width="64" height="64">
+  <object id="2055" gid="21257" x="4736" y="4928" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="326" name="coast" x="512" y="3904" width="64" height="64">
+  <object id="2056" gid="21310" x="4736" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="327" name="coast" x="448" y="3712" width="64" height="64">
+  <object id="2057" gid="21258" x="4672" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="328" name="coast" x="384" y="3328" width="64" height="64">
+  <object id="2058" gid="21258" x="4608" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="329" name="coast" x="320" y="3264" width="64" height="64">
+  <object id="2059" gid="21257" x="4608" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="333" name="coast" x="192" y="3200" width="64" height="64">
+  <object id="2060" gid="21310" x="4608" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="7"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="334" name="coast" x="64" y="3136" width="64" height="64">
+  <object id="2061" gid="21258" x="4544" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="335" name="coast" x="0" y="3072" width="64" height="64">
+  <object id="2062" gid="21258" x="4480" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="sand"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="383" name="coast" x="3904" y="2752" width="64" height="64">
+  <object id="2063" gid="21258" x="4416" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="384" name="coast" x="4032" y="2752" width="64" height="64">
+  <object id="2064" gid="21258" x="4352" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="385" name="coast" x="3968" y="2752" width="64" height="64">
+  <object id="2065" gid="21258" x="4288" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="387" name="coast" x="4160" y="2816" width="64" height="64">
+  <object id="2066" gid="21258" x="4224" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="388" name="coast" x="4288" y="2816" width="64" height="64">
+  <object id="2067" gid="21258" x="4160" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="389" name="coast" x="4224" y="2816" width="64" height="64">
+  <object id="2068" gid="21258" x="4096" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="390" name="coast" x="4352" y="2816" width="64" height="64">
+  <object id="2069" gid="21258" x="4032" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="391" name="coast" x="4544" y="2880" width="64" height="64">
+  <object id="2070" gid="21258" x="3968" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="392" name="coast" x="4672" y="2880" width="64" height="64">
+  <object id="2071" gid="21258" x="3840" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="393" name="coast" x="4608" y="2880" width="64" height="64">
+  <object id="2072" gid="21258" x="3904" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="394" name="coast" x="4736" y="2880" width="64" height="64">
+  <object id="2073" gid="21258" x="3712" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="395" name="coast" x="4416" y="2816" width="64" height="64">
+  <object id="2074" gid="21258" x="3776" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="397" name="coast" x="4864" y="2944" width="64" height="64">
+  <object id="2075" gid="21258" x="3648" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="398" name="coast" x="4992" y="2944" width="64" height="64">
+  <object id="2076" gid="21258" x="3584" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="399" name="coast" x="4928" y="2944" width="64" height="64">
+  <object id="2077" gid="21258" x="3520" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="401" name="coast" x="5120" y="3008" width="64" height="64">
+  <object id="2078" gid="21258" x="3456" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="402" name="coast" x="5248" y="3008" width="64" height="64">
+  <object id="2079" gid="21258" x="3392" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="403" name="coast" x="5184" y="3008" width="64" height="64">
+  <object id="2080" gid="21258" x="3328" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="404" name="coast" x="5312" y="3008" width="64" height="64">
+  <object id="2081" gid="21258" x="3200" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="406" name="coast" x="3776" y="2752" width="64" height="64">
+  <object id="2082" gid="21258" x="3264" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="407" name="coast" x="3840" y="2752" width="64" height="64">
+  <object id="2083" gid="21258" x="3136" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="408" name="coast" x="4032" y="2496" width="64" height="64">
+  <object id="2084" gid="21258" x="3008" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="409" name="coast" x="3968" y="2496" width="64" height="64">
+  <object id="2085" gid="21258" x="3072" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="410" name="coast" x="4096" y="2496" width="64" height="64">
+  <object id="2086" gid="21258" x="2944" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="411" name="coast" x="4224" y="2496" width="64" height="64">
+  <object id="2087" gid="21258" x="2880" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="412" name="coast" x="4160" y="2496" width="64" height="64">
+  <object id="2088" gid="21258" x="2816" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="413" name="coast" x="4352" y="2560" width="64" height="64">
+  <object id="2089" gid="21258" x="2752" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="414" name="coast" x="4480" y="2560" width="64" height="64">
+  <object id="2090" gid="21258" x="2688" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="415" name="coast" x="4416" y="2560" width="64" height="64">
+  <object id="2091" gid="21258" x="1152" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="416" name="coast" x="4288" y="2496" width="64" height="64">
+  <object id="2092" gid="21258" x="1216" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="417" name="coast" x="4544" y="2560" width="64" height="64">
+  <object id="2093" gid="21258" x="1216" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="419" name="coast" x="4736" y="2624" width="64" height="64">
+  <object id="2094" gid="21258" x="1280" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="420" name="coast" x="4672" y="2624" width="64" height="64">
+  <object id="2095" gid="21258" x="1344" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="421" name="coast" x="4800" y="2624" width="64" height="64">
+  <object id="2096" gid="21258" x="1408" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="422" name="coast" x="4864" y="2624" width="64" height="64">
+  <object id="2097" gid="21258" x="1408" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="423" name="coast" x="4992" y="2688" width="64" height="64">
+  <object id="2098" gid="21258" x="1472" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="425" name="coast" x="5120" y="2688" width="64" height="64">
+  <object id="2099" gid="21258" x="1536" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="426" name="coast" x="5056" y="2688" width="64" height="64">
+  <object id="2100" gid="21258" x="1600" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="427" name="coast" x="5184" y="2688" width="64" height="64">
+  <object id="2101" gid="21258" x="1728" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="429" name="coast" x="5376" y="2752" width="64" height="64">
+  <object id="2102" gid="21258" x="1664" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="430" name="coast" x="5440" y="2752" width="64" height="64">
+  <object id="2103" gid="21258" x="1792" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="431" name="coast" x="5312" y="2752" width="64" height="64">
+  <object id="2104" gid="21258" x="1856" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="432" name="coast" x="4352" y="2496" width="64" height="64">
+  <object id="2105" gid="21258" x="1920" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="433" name="coast" x="4608" y="2560" width="64" height="64">
+  <object id="2106" gid="21258" x="1984" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="434" name="coast" x="4608" y="2624" width="64" height="64">
+  <object id="2107" gid="21258" x="2112" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="435" name="coast" x="4928" y="2688" width="64" height="64">
+  <object id="2108" gid="21258" x="2176" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="436" name="coast" x="4928" y="2624" width="64" height="64">
+  <object id="2109" gid="21258" x="2048" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="437" name="coast" x="5248" y="2688" width="64" height="64">
+  <object id="2110" gid="21258" x="2304" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="438" name="coast" x="5248" y="2752" width="64" height="64">
+  <object id="2111" gid="21258" x="2240" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="439" name="coast" x="4096" y="2752" width="64" height="64">
+  <object id="2112" gid="21258" x="2368" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="440" name="coast" x="4096" y="2816" width="64" height="64">
+  <object id="2113" gid="21258" x="2432" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="441" name="coast" x="4480" y="2816" width="64" height="64">
+  <object id="2114" gid="21258" x="2560" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="442" name="coast" x="4480" y="2880" width="64" height="64">
+  <object id="2115" gid="21258" x="2560" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="443" name="coast" x="4800" y="2880" width="64" height="64">
+  <object id="2116" gid="21258" x="2624" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="444" name="coast" x="4800" y="2944" width="64" height="64">
+  <object id="2117" gid="21258" x="2496" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="445" name="coast" x="5056" y="2944" width="64" height="64">
+  <object id="2118" gid="21308" x="1088" y="5056" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="446" name="coast" x="5056" y="3008" width="64" height="64">
+  <object id="2119" gid="21259" x="1088" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="447" name="coast" x="5376" y="3008" width="64" height="64">
+  <object id="2120" gid="21258" x="1024" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="448" name="coast" x="5376" y="3072" width="64" height="64">
+  <object id="2121" gid="21258" x="960" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="449" name="coast" x="5440" y="3072" width="64" height="64">
+  <object id="2122" gid="21258" x="896" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="450" name="coast" x="3200" y="2240" width="64" height="64">
+  <object id="2123" gid="21258" x="832" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="451" name="coast" x="3264" y="2176" width="64" height="64">
+  <object id="2124" gid="21258" x="768" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="452" name="coast" x="3328" y="2112" width="64" height="64">
+  <object id="2125" gid="21258" x="704" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="453" name="coast" x="3392" y="2048" width="64" height="64">
+  <object id="2126" gid="21308" x="640" y="4992" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="454" name="coast" x="3264" y="2240" width="64" height="64">
+  <object id="2127" gid="21259" x="640" y="4928" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="455" name="coast" x="3328" y="2176" width="64" height="64">
+  <object id="2128" gid="21308" x="576" y="4928" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="456" name="coast" x="3392" y="2112" width="64" height="64">
+  <object id="2129" gid="21259" x="576" y="4864" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="457" name="coast" x="3456" y="2048" width="64" height="64">
+  <object id="2130" gid="21308" x="512" y="4864" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="458" name="coast" x="3520" y="2048" width="64" height="64">
+  <object id="2131" gid="21283" x="512" y="4800" width="64" height="64">
    <properties>
-    <property name="side" value="top"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="459" name="coast" x="3584" y="2048" width="64" height="64">
+  <object id="2132" gid="21283" x="512" y="4736" width="64" height="64">
    <properties>
-    <property name="side" value="topright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="460" name="coast" x="3584" y="2112" width="64" height="64">
+  <object id="2133" gid="21283" x="512" y="4672" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="461" name="coast" x="3584" y="2176" width="64" height="64">
+  <object id="2135" gid="21283" x="512" y="4608" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="462" name="coast" x="3200" y="2304" width="64" height="64">
+  <object id="2136" gid="21283" x="512" y="4544" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="463" name="coast" x="3200" y="2368" width="64" height="64">
+  <object id="2137" gid="21283" x="512" y="4416" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="464" name="coast" x="3200" y="2432" width="64" height="64">
+  <object id="2138" gid="21283" x="512" y="4352" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="465" name="coast" x="3200" y="2496" width="64" height="64">
+  <object id="2139" gid="21283" x="512" y="4480" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="466" name="coast" x="3264" y="2624" width="64" height="64">
+  <object id="2140" gid="21283" x="512" y="4288" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="467" name="coast" x="3328" y="2624" width="64" height="64">
+  <object id="2141" gid="21283" x="512" y="4160" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="468" name="coast" x="3200" y="2560" width="64" height="64">
+  <object id="2142" gid="21283" x="512" y="4096" width="64" height="64">
    <properties>
-    <property name="side" value="left"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="469" name="coast" x="3200" y="2624" width="64" height="64">
+  <object id="2143" gid="21283" x="512" y="4224" width="64" height="64">
    <properties>
-    <property name="side" value="bottomleft"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="470" name="coast" x="3392" y="2304" width="64" height="64">
+  <object id="2144" gid="21283" x="512" y="4032" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="471" name="coast" x="3520" y="2240" width="64" height="64">
+  <object id="2145" gid="21283" x="512" y="3968" width="64" height="64">
    <properties>
-    <property name="side" value="topleft"/>
-    <property name="terrain" value="grass_i"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="472" name="coast" x="3584" y="2240" width="64" height="64">
+  <object id="2146" gid="21259" x="512" y="3968" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="473" name="coast" x="3520" y="2304" width="64" height="64">
+  <object id="2147" gid="21308" x="448" y="3968" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="474" name="coast" x="3456" y="2304" width="64" height="64">
+  <object id="2148" gid="21283" x="448" y="3904" width="64" height="64">
    <properties>
-    <property name="side" value="bottom"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="475" name="coast" x="3392" y="2432" width="64" height="64">
+  <object id="2149" gid="21283" x="448" y="3840" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="476" name="coast" x="3392" y="2368" width="64" height="64">
+  <object id="2150" gid="21259" x="448" y="3776" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="477" name="coast" x="3392" y="2496" width="64" height="64">
+  <object id="2151" gid="21308" x="384" y="3776" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
    </properties>
   </object>
-  <object id="478" name="coast" x="3392" y="2560" width="64" height="64">
+  <object id="2152" gid="21283" x="384" y="3712" width="64" height="64">
    <properties>
-    <property name="side" value="right"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
    </properties>
   </object>
-  <object id="479" name="coast" x="3392" y="2624" width="64" height="64">
+  <object id="2153" gid="21283" x="384" y="3648" width="64" height="64">
    <properties>
-    <property name="side" value="bottomright"/>
-    <property name="terrain" value="grass"/>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2154" gid="21283" x="384" y="3584" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2155" gid="21283" x="384" y="3520" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2156" gid="21283" x="384" y="3456" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="0"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2157" gid="21259" x="384" y="3392" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2158" gid="21308" x="320" y="3392" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="2159" gid="21259" x="320" y="3328" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2160" gid="21258" x="256" y="3328" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2161" gid="21308" x="192" y="3328" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="2162" gid="21259" x="192" y="3264" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2163" gid="21258" x="128" y="3264" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="1"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2164" gid="21308" x="64" y="3264" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="2165" gid="21259" x="64" y="3200" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2166" gid="21308" x="0" y="3200" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="1"/>
+   </properties>
+  </object>
+  <object id="2167" gid="21259" x="0" y="3136" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="2"/>
+    <property name="terrain" type="int" value="0"/>
+   </properties>
+  </object>
+  <object id="2171" gid="21294" x="5440" y="3136" width="64" height="64">
+   <properties>
+    <property name="n" type="int" value="6"/>
+    <property name="terrain" type="int" value="2"/>
    </properties>
   </object>
  </objectgroup>
@@ -3771,7 +3862,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="2" name="GameObjs">
+ <objectgroup id="2" name="GameObjs" visible="0">
   <properties>
    <property name="group-id" type="int" value="5"/>
   </properties>
@@ -5136,7 +5227,7 @@
    </properties>
   </object>
  </objectgroup>
- <objectgroup id="5" name="Transition">
+ <objectgroup id="5" name="Transition" visible="0">
   <properties>
    <property name="group-id" type="int" value="2"/>
   </properties>
@@ -5561,40 +5652,98 @@
   <properties>
    <property name="group-id" type="int" value="6"/>
   </properties>
-  <object id="1584" x="0" y="3200" width="256" height="2304"/>
-  <object id="1591" x="0" y="3136" width="128" height="64"/>
-  <object id="1592" x="0" y="3072" width="64" height="64"/>
-  <object id="1594" x="576" y="4992" width="4928" height="512"/>
-  <object id="1595" x="576" y="4928" width="576" height="64"/>
-  <object id="1596" x="576" y="4864" width="128" height="64"/>
-  <object id="1597" x="576" y="4800" width="64" height="64"/>
-  <object id="1598" x="4864" y="4416" width="640" height="576"/>
-  <object id="1599" x="4608" y="4928" width="256" height="64"/>
-  <object id="1600" x="4736" y="4864" width="128" height="64"/>
-  <object id="1601" x="4992" y="4224" width="512" height="192"/>
-  <object id="1602" x="5248" y="4096" width="256" height="128"/>
-  <object id="1603" x="5312" y="4032" width="192" height="64"/>
-  <object id="1604" x="5376" y="3968" width="128" height="64"/>
-  <object id="1605" x="5056" y="4160" width="192" height="64"/>
-  <object id="1606" x="4928" y="4352" width="64" height="64"/>
-  <object id="1607" x="256" y="3904" width="320" height="1600"/>
-  <object id="1608" x="256" y="3328" width="192" height="576"/>
-  <object id="1609" x="448" y="3712" width="64" height="192"/>
-  <object id="1610" x="256" y="3264" width="128" height="64"/>
-  <object id="1611" x="3648" y="2496" width="192" height="192"/>
-  <object id="1612" x="3840" y="2560" width="512" height="192"/>
-  <object id="1613" x="4352" y="2624" width="256" height="128"/>
-  <object id="1614" x="4160" y="2752" width="448" height="64"/>
-  <object id="1615" x="4608" y="2688" width="320" height="192"/>
-  <object id="1616" x="4544" y="2816" width="64" height="64"/>
-  <object id="1617" x="4928" y="2752" width="320" height="192"/>
-  <object id="1618" x="4864" y="2880" width="64" height="64"/>
-  <object id="1619" x="5248" y="2816" width="256" height="192"/>
-  <object id="1620" x="5120" y="2944" width="128" height="64"/>
-  <object id="1621" x="5440" y="3008" width="64" height="64"/>
-  <object id="1622" x="3264" y="2304" width="128" height="320"/>
-  <object id="1623" x="3328" y="2240" width="192" height="64"/>
-  <object id="1624" x="3456" y="2112" width="128" height="64"/>
-  <object id="1625" x="3392" y="2176" width="192" height="64"/>
+  <object id="1584" x="0" y="3328.01" width="256" height="2175.99"/>
+  <object id="1591" x="0" y="3264" width="191.913" height="64"/>
+  <object id="1592" x="0" y="3200" width="64" height="64"/>
+  <object id="1594" x="575.011" y="5056" width="4929.98" height="448"/>
+  <object id="1595" x="576" y="4992" width="511.956" height="64"/>
+  <object id="1597" x="576" y="4928" width="64" height="64"/>
+  <object id="1598" x="4928" y="4416" width="576" height="640"/>
+  <object id="1599" x="4672" y="4992" width="256" height="64"/>
+  <object id="1600" x="4800" y="4928" width="128" height="64"/>
+  <object id="1601" x="5056.04" y="4224" width="447.958" height="192"/>
+  <object id="1602" x="5312.01" y="4096" width="191.992" height="128"/>
+  <object id="1603" x="5375.98" y="4032" width="128.021" height="64"/>
+  <object id="1607" x="256" y="4864.01" width="320" height="639.989"/>
+  <object id="1608" x="256" y="3392" width="127.969" height="511.997"/>
+  <object id="1609" x="384" y="3776" width="64" height="127.997"/>
+  <object id="1611" x="3648" y="2496" width="192" height="192">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1612" x="3840" y="2560" width="512" height="192">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1613" x="4352" y="2624" width="256" height="128">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1614" x="4160" y="2752" width="448" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1615" x="4608" y="2688" width="320" height="192">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1616" x="4544" y="2816" width="64" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1617" x="4928" y="2752" width="320" height="192">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1618" x="4864" y="2880" width="64" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1619" x="5248" y="2816" width="256" height="192">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1620" x="5120" y="2944" width="128" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1621" x="5440" y="3008" width="64" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1622" x="3264" y="2304" width="128" height="320">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1623" x="3328" y="2240" width="192" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1624" x="3456" y="2112" width="128" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="1625" x="3392" y="2176" width="192" height="64">
+   <properties>
+    <property name="terrain" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="2168" x="256" y="3328" width="64" height="64"/>
+  <object id="2169" x="256" y="3904" width="192" height="960.016"/>
+  <object id="2170" x="448" y="3968" width="64" height="896.005"/>
  </objectgroup>
 </map>

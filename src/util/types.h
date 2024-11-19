@@ -43,7 +43,14 @@ namespace pk {
 		HouseID,
 		HospitalID,
 		PlayerID,
-		NurseID
+		NurseID		
+	};
+
+	enum CoastType {
+		Sand0,
+		Sand1,
+		Forest0,
+		Forest1
 	};
 
 }
