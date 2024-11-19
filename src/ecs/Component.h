@@ -9,7 +9,7 @@
 
 namespace pk {
 
-	constexpr std::size_t NUM_COMPONENTS{ 6 };
+	constexpr std::size_t NUM_COMPONENTS{ 7 };
 
 	typedef struct transform {
 		Rectangle rect{};
@@ -73,6 +73,11 @@ namespace pk {
 		explicit transition(const pk::SceneID scene_id) : scene_id(scene_id) { }
 	} transition_t;
 
+	typedef struct water {
+		std::uint8_t rows{};
+		std::uint8_t cols{};
+	} water_t;
+
 	class ComponentManager {
 
 	private:
@@ -96,6 +101,7 @@ namespace pk {
 			this->register_component<pk::character_t>();
 			this->register_component<pk::player_t>();
 			this->register_component<pk::transition_t>();
+			this->register_component<pk::water_t>();
 			assert(this->component_map.size() == pk::NUM_COMPONENTS);
 		}
 

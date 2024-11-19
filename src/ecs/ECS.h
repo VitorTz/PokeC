@@ -32,6 +32,16 @@ namespace pk {
 			}
 			return e;
 		}
+
+		pk::entity_t entity_create(const pk::zindex_t zindex, const bool add_to_camera, const float x, const float y) {
+			const pk::entity_t e = this->entity->entity_create();
+			this->component->insert<pk::transform_t>(e, pk::transform_t{ zindex });
+			this->get_transform(e)->rect = { x, y, 0.0f, 0.0f };
+			if (add_to_camera) {
+				this->camera->insert(e, zindex);
+			}
+			return e;
+		}
 		
 		void entity_destroy(const pk::entity_t e) {
 			this->entities_to_destroy.push(e);

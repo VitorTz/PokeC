@@ -55,6 +55,14 @@ namespace pk {
 		void draw(const pk::entity_t e) override;
 	};
 
+	class WaterSystem : public pk::System {
+	public:
+		WaterSystem();
+		void update(const float dt) override;
+		void draw(const pk::entity_t e) override;
+	};
+
+
 	class SystemManager {
 
 	private:
@@ -82,10 +90,12 @@ namespace pk {
 			this->register_component<pk::character_t, pk::CharacterSystem>(false);
 			this->register_component<pk::player_t, pk::PlayerSystem>(false);
 			this->register_component<pk::transition_t, pk::TransitionSystem>(true);
+			this->register_component<pk::water_t, pk::WaterSystem>(true);
 			assert(this->system_map.size() == pk::NUM_COMPONENTS);
 
 			// Update Order
 			this->update_order.push_back(typeid(pk::sprite_animation_t).hash_code());
+			this->update_order.push_back(typeid(pk::water_t).hash_code());
 			this->update_order.push_back(typeid(pk::player_t).hash_code());
 
 			this->entity_to_drawable_components.reserve(pk::MAX_ENTITIES);

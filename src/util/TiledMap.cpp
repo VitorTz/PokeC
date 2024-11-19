@@ -169,6 +169,13 @@ void pk::tiledmap_load(pk::ECS* ecs, const pk::SceneID scene_id) {
 					load_gameobj(ecs, tile, file);
 					break;
 				case pk::WaterGroupID:
+					ecs->component_insert(
+						ecs->entity_create(pk::CAMERA_ZINDEX_WATER, true, tile.x, tile.y),
+						pk::water_t{ 
+							static_cast<std::uint8_t>(tile.height / pk::TILE_SIZE), 
+							static_cast<std::uint8_t>(tile.width / pk::TILE_SIZE) 
+						}
+					);
 					break;
 				default:
 					break;
