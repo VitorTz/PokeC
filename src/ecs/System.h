@@ -106,6 +106,7 @@ namespace pk {
 			this->update_order.push_back(typeid(pk::water_t).hash_code());
 			this->update_order.push_back(typeid(pk::coast_t).hash_code());
 			this->update_order.push_back(typeid(pk::player_t).hash_code());
+			this->update_order.push_back(typeid(pk::character_t).hash_code());
 
 			this->entity_to_drawable_components.reserve(pk::MAX_ENTITIES);
 			for (pk::entity_t e = 0; e < pk::MAX_ENTITIES; e++)

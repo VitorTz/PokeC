@@ -1,4 +1,5 @@
 #include "EcsManager.h"
+#include "../util/TiledMap.h"
 
 
 static std::unordered_map<pk::SceneID, std::unique_ptr<pk::ECS>> ecs_map{};
@@ -7,7 +8,8 @@ pk::ECS* ecs{ nullptr };
 
 pk::ECS* pk::ecs_create(const pk::SceneID scene_id) {
 	if (ecs_map.find(scene_id) == ecs_map.end()) {
-		ecs_map.emplace(scene_id, std::make_unique<pk::ECS>());
+		ecs_map.emplace(scene_id, std::make_unique<pk::ECS>(scene_id));
+		pk::tiledmap_load(scene_id);
 	}
 	return ecs_map[scene_id].get();
 }
@@ -39,4 +41,9 @@ pk::ECS* pk::ecs_get() {
 pk::ECS* pk::ecs_get(const pk::SceneID scene_id) {
 	assert(ecs_map.find(scene_id) != ecs_map.end());
 	return ecs_map[scene_id].get();
+}
+
+
+bool pk::ecs_has_instance(const pk::SceneID scene_id) {
+	return ecs_map.find(scene_id) != ecs_map.end();
 }

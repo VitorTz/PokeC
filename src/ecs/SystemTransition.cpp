@@ -14,7 +14,7 @@ void pk::TransitionSystem::draw(const pk::entity_t e) {
 	const pk::transform_t* transform = ecs->get_transform(e);
 	if (transition->is_hovered) {
 		Vector2 anchor = GetScreenToWorld2D(Vector2{ pk::SCREEN_CENTERX, pk::SCREEN_H - 50.0f }, ecs->get_camera());
-		const char* txt = TextFormat("Press F to enter %s", pk::tiledmap_get_info(transition->scene_id).name);
+		const char* txt = TextFormat("Press F to enter %s", pk::MAP_INFO[transition->scene_id].name);
 		float txt_size = static_cast<float>(MeasureText(txt, 20));
 		float padding = 10.0f;
 		float width = padding * 3.0f + txt_size;

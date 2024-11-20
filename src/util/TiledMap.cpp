@@ -1,204 +1,149 @@
 #include <cassert>
 #include <stdio.h>
-#include <array>
+#include <fstream>
 #include "TiledMap.h"
 #include "util.h"
+#include "../ecs/EcsManager.h"
 #include "../constants.h"
 
-typedef struct tile {
-	float x{};
-	float y{};
-	float width{};
-	float height{};
-	int id{};
-	char imagepath[256]{};
-} tile_t;
 
-
-static std::array<pk::tiled_map_info_t, pk::NumScenes> maps{
-	pk::tiled_map_info_t{"", "", ""},
-	pk::tiled_map_info_t{"World", MAPS_PATH "world.bin", MAPS_PATH "world.png"},
-	pk::tiled_map_info_t{"Fire Arena", MAPS_PATH "fire.bin", MAPS_PATH "fire.png"},
-	pk::tiled_map_info_t{"Plant Arena", MAPS_PATH "plant.bin", MAPS_PATH "plant.png"},
-	pk::tiled_map_info_t{"Water Arena", MAPS_PATH "water.bin", MAPS_PATH "water.png"},
-	pk::tiled_map_info_t{"Hospital", MAPS_PATH "hospital.bin", MAPS_PATH "hospital.png"},
-	pk::tiled_map_info_t{"House", MAPS_PATH "house.bin", MAPS_PATH "house.png"},
-	pk::tiled_map_info_t{"", ""},
-};
-
-
-void pk::tiledmap_init() {
-	int width, height;
-	for (pk::tiled_map_info_t& info : maps) {
-		FILE* file;
-		file = fopen(info.file, "rb");
-		assert(file != NULL);
-		fread(&width, sizeof(int), 1, file);
-		fread(&height, sizeof(int), 1, file);
-		info.width = static_cast<float>(width);
-		info.height = static_cast<float>(height);
-		fclose(file);
-	}
-}
-
-
-const pk::tiled_map_info_t& pk::tiledmap_get_info(const pk::SceneID scene_id) {
-	return maps[scene_id];
-}
-
-
-static void load_gameobj(pk::ECS* ecs, const tile_t& tile, FILE* file) {
-	switch (tile.id) {
-		case pk::FireArenaID:			
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				tile.width * 0.7f,
-				tile.height * 0.6f
-			);
-			break;
-		case pk::WaterArenaID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				tile.width * 0.7f,
-				tile.height * 0.6f
-			);
-			break;
-		case pk::PlantArenaID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				tile.width * 0.7f,
-				tile.height * 0.6f
-			);
-			break;
-		case pk::HospitalID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				tile.width * 0.8f,
-				tile.height * 0.6f
-			);
-			break;
-		case pk::HouseID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				tile.width * 0.8f,
-				tile.height * 0.6f
-			);
-			break;
-		case pk::TreeID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				pk::TILE_SIZE * 0.8f,
-				pk::TILE_SIZE * 0.8f
-			);
-			break;
-		case pk::RockID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				pk::TILE_SIZE * 0.6f,
-				pk::TILE_SIZE * 0.6f
-			);
-			break;
-		case pk::PalmID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				pk::TILE_SIZE * 0.6f,
-				pk::TILE_SIZE * 0.6f
-			);
-			break;
-		case pk::PillarID:
-			ecs->add_collision_to_entity(
-				ecs->sprite_create(pk::CAMERA_ZINDEX_OBJECTS, tile.imagepath, tile.x, tile.y),
-				pk::TILE_SIZE * 0.8f,
-				pk::TILE_SIZE * 0.8f
-			);
-			break;
-		case pk::PillarTopID:
-			ecs->sprite_create(pk::CAMERA_ZINDEX_TOP, tile.imagepath, tile.x, tile.y);
-			break;
-		default:
-			break;
-	}
-}
-
-static void load_entity(pk::ECS* ecs, const tile_t& tile) {
-	switch (tile.id) {
+static void load_entity(pk::ECS* ecs, const pk::tile_t& tile) {
+	const pk::entity_t e = ecs->entity_create(tile.zindex, true);
+	ecs->get_transform(e)->rect = { tile.x - pk::PLAYER_SIZE / 2.0f, tile.y - pk::PLAYER_SIZE / 2.0f, pk::PLAYER_SIZE, pk::PLAYER_SIZE };
+	ecs->component_insert<pk::character_t>(e, pk::character_t{ tile.objid, (char)(tile.direction - '0') });
+	switch (tile.objid) {
 		case pk::PlayerID:
-			ecs->player_create(tile.x, tile.y);
+			ecs->component_insert<pk::sprite_animation_t>(e, pk::sprite_animation_t{ CHARACTERS_PATH "player.png" });
+			ecs->component_insert<pk::player_t>(e, pk::player_t{ e, ecs->sprite_create(tile.zindex - 1, GRAPHICS_PATH "other/shadow.png") });
 			break;
 		case pk::NurseID:
+			ecs->component_insert<pk::sprite_animation_t>(e, pk::sprite_animation_t{ CHARACTERS_PATH "purple_girl.png" });
 			break;
 		default:
 			break;
 	}
 }
 
-static void load_coast(pk::ECS* ecs, const tile_t& tile, FILE* file) {
-	int coast_type;
-	int n;
-	fread(&coast_type, sizeof(int), 1, file);
-	fread(&n, sizeof(int), 1, file);
-	const pk::entity_t e = ecs->entity_create(pk::CAMERA_ZINDEX_WATER, true, tile.x, tile.y);
+
+static void load_collision(pk::ECS* ecs, const pk::tile_t& tile) {
+	ecs->add_collision(tile.x, tile.y, tile.width, tile.height);
+}
+
+
+static void load_transition(pk::ECS* ecs, const pk::tile_t& tile) {
+	ecs->add_transition(
+		static_cast<pk::SceneID>(tile.objid),
+		Rectangle{tile.x, tile.y, tile.width, tile.height}
+	);
+}
+
+
+static void load_coast(pk::ECS* ecs, const pk::tile_t& tile) {
+	const pk::entity_t e = ecs->entity_create(tile.zindex, true, tile.x, tile.y);
 	ecs->component_insert<pk::coast_t>(
-		e,
+		e, 
 		pk::coast_t{
-			static_cast<pk::CoastType>(coast_type),
-			static_cast<std::uint8_t>(n / 3),
-			static_cast<std::uint8_t>(n % 3)
+			static_cast<pk::ObjectID>(tile.objid),
+			static_cast<std::uint8_t>(tile.n / 3),
+			static_cast<std::uint8_t>(tile.n % e)
 		}
 	);
 }
 
 
-void pk::tiledmap_load(pk::ECS* ecs, const pk::SceneID scene_id) {
-	const pk::tiled_map_info_t& info = maps[scene_id];
-	FILE* file;
-	file = fopen(info.file, "rb");
-	fseek(file, sizeof(int) * 2, SEEK_SET);
+static void load_monster(pk::ECS* ecs, const pk::tile_t& tile, char* imagepath) {
 
-	// Terrain Image
-	ecs->sprite_create(pk::CAMERA_ZINDEX_TERRAIN, info.terrain_image);
+}
 
-	while (!feof(file)) {
-		int groupid, n;		
-		tile_t tile{};
-		fread(&groupid, sizeof(int), 1, file);
-		fread(&n, sizeof(int), 1, file);
+
+static void load_gameobj(pk::ECS* ecs, const pk::tile_t& tile, char* imagepath) {
+	const pk::entity_t e = ecs->sprite_create(tile.zindex, imagepath, tile.x, tile.y);	
+	float w, h;
+	switch (tile.objid) {
+		case pk::BuildingID:
+			w = tile.width * 0.8f;
+			h = tile.height * 0.8f;
+			ecs->add_collision(
+				tile.x + tile.width / 2.0f - w / 2.0f,
+				tile.y + tile.height - h,
+				w,
+				h
+			);
+			break;
+		case pk::TileCollisionID:
+			ecs->add_collision(
+				tile.x + tile.width / 2.0f - pk::TILE_SIZE * 0.4f,
+				tile.y + tile.height - pk::TILE_SIZE * 0.8f,
+				pk::TILE_SIZE * 0.6f,
+				pk::TILE_SIZE * 0.6f
+			);
+			break;
+		default:
+			break;
+	}
+}
+
+
+static void load_water(pk::ECS* ecs, const pk::tile_t& tile) {
+	const pk::entity_t e = ecs->entity_create(tile.zindex, true);
+	ecs->get_transform(e)->rect = { tile.x, tile.y, tile.width, tile.height };
+	ecs->component_insert<pk::water_t>(
+		e, 
+		pk::water_t{ 
+			static_cast<std::uint8_t>(tile.height / pk::TILE_SIZE),
+			static_cast<std::uint8_t>(tile.width / pk::TILE_SIZE)
+		}
+	);
+}
+
+
+void pk::tiledmap_load(const pk::SceneID scene_id) {
+	assert(ecs_has_instance(scene_id));
+	pk::ECS* ecs = pk::ecs_get(scene_id);
+	std::ifstream file(pk::MAP_INFO[scene_id].file);
+
+	if (file.is_open() == false) {
+		printf("[ERROR] [FILE OPEN] [scene -> %s\n]", pk::MAP_INFO[scene_id].name);
+		return;
+	}
+
+	ecs->sprite_create(0, pk::MAP_INFO[scene_id].terrain_image);
+
+	pk::tile_t tile{};
+	int groupid, n;
+	char imagepath[256];	
+	while (!file.eof()) {
+		file >> groupid >> n;
 		for (int i = 0; i < n; i++) {
-			fread(&tile, sizeof(tile_t) - sizeof(tile.imagepath), 1, file);
+			file >> tile.x >> tile.y >> tile.width >> tile.height >> tile.objid >> tile.zindex >> tile.terrain >> tile.n >> tile.direction;
+			file >> imagepath;						
 			switch (groupid) {
-				case pk::EntitiesGroupID:
+				case EntitiesGroupID:
 					load_entity(ecs, tile);
 					break;
-				case pk::CollisionGroupID:
-					ecs->add_collision(tile.x, tile.y, tile.width, tile.height);
+				case CollisionGroupID:
+					load_collision(ecs, tile);
 					break;
-				case pk::TransitionGroupID:
-					ecs->add_transition((pk::SceneID) tile.id, Rectangle{ tile.x, tile.y, tile.width, tile.height });
+				case TransitionGroupID:
+					load_transition(ecs, tile);
 					break;
-				case pk::CoastGroupID:
-					load_coast(ecs, tile, file);
+				case CoastGroupID:
+					load_coast(ecs, tile);
 					break;
-				case pk::MonsterGroupID:
-					pk::readstr(tile.imagepath, file);
+				case MonsterGroupID:
+					load_monster(ecs, tile, imagepath);
 					break;
-				case pk::GameObjsID:
-					pk::readstr(tile.imagepath, file);
-					load_gameobj(ecs, tile, file);
+				case GameObjsID:
+					load_gameobj(ecs, tile, imagepath);
 					break;
-				case pk::WaterGroupID:
-					ecs->component_insert(
-						ecs->entity_create(pk::CAMERA_ZINDEX_WATER, true, tile.x, tile.y),
-						pk::water_t{ 
-							static_cast<std::uint8_t>(tile.height / pk::TILE_SIZE), 
-							static_cast<std::uint8_t>(tile.width / pk::TILE_SIZE) 
-						}
-					);
+				case WaterGroupID:
+					load_water(ecs, tile);
 					break;
 				default:
 					break;
 			}
-
 		}
-	}
-	fclose(file);
+	}	
+
+	file.close();
 }

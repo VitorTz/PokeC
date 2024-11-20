@@ -40,17 +40,23 @@ namespace pk {
 		) : texture(pk::texture_pool_get(filepath)),
 			rect({0.0f, 0.0f, width, height}),
 		    max_frame(speed),
-		    max_index(texture.width / width) { }
+			max_index(static_cast<std::uint8_t>(texture.width / width)) { }
+		explicit sprite_animation(const char* filepath) : sprite_animation(filepath, pk::PLAYER_SIZE, pk::PLAYER_SIZE, pk::ANIMATION_NORMAL) { }
 	} sprite_animation_t;
 
 	typedef struct character {
-		pk::ObjectID id{};		
-		bool last_is_idle{};
-		bool is_idle{};
+		pk::CharacterID id{};		
 		char last_direction{'d'};
 		char direction{'d'};
+		bool last_is_idle{true};
+		bool is_idle{true};
 		character() = default;
-		character(const pk::ObjectID id) : id(id) { }
+		character(
+			const int id, 
+			const char d
+		) : id(static_cast<pk::CharacterID>(id)), 
+			last_direction(d), 
+			direction(d) { }
 	} character_t;
 
 	typedef struct player {
@@ -79,7 +85,7 @@ namespace pk {
 	} water_t;
 
 	typedef struct coast {
-		pk::CoastType id{};
+		pk::ObjectID id{};
 		std::uint8_t row{};
 		std::uint8_t col{};
 	} coast_t;

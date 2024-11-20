@@ -4,8 +4,7 @@
 
 
 pk::WorldScene::WorldScene() {
-	pk::ECS* ecs = pk::ecs_create(pk::WorldSceneID);
-	pk::tiledmap_load(ecs, pk::WorldSceneID);
+	pk::ECS* ecs = pk::ecs_create(pk::WorldSceneID);	
 }
 
 

@@ -24,11 +24,13 @@ namespace pk {
 			0.0f,
 			1.0f
 		};
+		float max_x{};
+		float max_y{};
 
 	public:
-		Camera();
+		explicit Camera(pk::SceneID scene_id);
 
-		void begin_drawing();
+		void begin_drawing() const;
 
 		void end_drawing();
 		

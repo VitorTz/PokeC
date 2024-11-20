@@ -13,6 +13,8 @@
 
 namespace pk {
 
+	constexpr bool DEBUG_MODE{ true };
+
 	// Window
 	constexpr float SCREEN_W{ 1280.0f };
 	constexpr float SCREEN_H{ 720.0f };
@@ -23,11 +25,22 @@ namespace pk {
 	constexpr char WINDOW_TITLE[]{ "PokemonCPP" };
 	constexpr int FPS{ 60 };
 
+	// Maps
+	constexpr float TILE_SIZE{ 64.0f };
+	constexpr pk::tiled_map_info_t MAP_INFO[pk::NumScenes] = {
+		pk::tiled_map_info_t{"Title Screen", "", ""},
+		pk::tiled_map_info_t{"World Map", MAPS_PATH "world.txt", MAPS_PATH "world.png", 86 * pk::TILE_SIZE, 86 * pk::TILE_SIZE},
+		pk::tiled_map_info_t{"Fire Arena", MAPS_PATH "fire.txt", MAPS_PATH "fire.png", 24 * pk::TILE_SIZE, 43 * pk::TILE_SIZE},
+		pk::tiled_map_info_t{"Plant Arena", MAPS_PATH "plant.txt", MAPS_PATH "plant.png", 24 * pk::TILE_SIZE, 43 * pk::TILE_SIZE},
+		pk::tiled_map_info_t{"Water Arena", MAPS_PATH "water.txt", MAPS_PATH "water.png", 24 * pk::TILE_SIZE, 43 * pk::TILE_SIZE},
+		pk::tiled_map_info_t{"Hospital", MAPS_PATH "hospital.txt", MAPS_PATH "hospital.png", 20 * pk::TILE_SIZE, 12 * pk::TILE_SIZE},
+		pk::tiled_map_info_t{"House", MAPS_PATH "house.txt", MAPS_PATH "house.png", 20 * pk::TILE_SIZE, 12 * pk::TILE_SIZE},
+		pk::tiled_map_info_t{"Test Scene", "", ""}
+	};
+
 	// Game
 	constexpr pk::entity_t MAX_ENTITIES{ 4096 };
 	constexpr pk::SceneID MAIN_SCENE{ pk::WorldSceneID };
-	constexpr float TILE_SIZE{ 64.0f };
-	constexpr bool DEBUG_MODE{ true };
 
 	// Keys
 	constexpr int LEFT_KEY{ KEY_A };
@@ -39,8 +52,8 @@ namespace pk {
 	// Player
 	constexpr float PLAYER_SPEED{ 150.0f };
 	constexpr float PLAYER_SIZE{ 128.0f };
-	constexpr Vector2 PLAYER_COLLISION_BOX{pk::TILE_SIZE * 0.7f, pk::TILE_SIZE * 0.7f };
-	constexpr Vector2 PLAYER_ACTION_BOX{ pk::TILE_SIZE * 1.8f, pk::TILE_SIZE};
+	constexpr Vector2 PLAYER_COLLISION_BOX{ pk::TILE_SIZE * 0.7f, pk::TILE_SIZE * 0.7f };
+	constexpr Vector2 PLAYER_ACTION_BOX{ pk::TILE_SIZE * 1.8f, pk::TILE_SIZE };
 
 	// Animation
 	constexpr std::uint8_t ANIMATION_SLOW{ 16 };
@@ -49,15 +62,8 @@ namespace pk {
 	constexpr std::uint8_t ANIMATION_WATER_SPEED{ pk::ANIMATION_SLOW };
 
 	// Camera
-	constexpr pk::zindex_t CAMERA_ZINDEX_MIN{ 0 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_TERRAIN{ 0 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_WATER{ 1 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_SHADOW{ 2 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_OBJECTS{ 3 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_TOP{ 4 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_SKY{ 5 };
-	constexpr pk::zindex_t CAMERA_ZINDEX_MAX{ 5 };
-
-
+	constexpr float CAMERA_ZOOM_MIN{ 0.5f };
+	constexpr float CAMERA_ZOOM_MAX{ 2.5f };
+	constexpr pk::zindex_t CAMERA_ZINDEX_MAX{ 10 };
 
 }

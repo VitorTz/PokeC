@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="24" height="34" tilewidth="64" tileheight="64" infinite="0" nextlayerid="14" nextobjectid="939">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="24" height="34" tilewidth="64" tileheight="64" infinite="0" nextlayerid="14" nextobjectid="940">
  <properties>
   <property name="map-id" type="int" value="2"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/world.tsx"/>
  <tileset firstgid="211" source="../tilesets/objects.tsx"/>
- <tileset firstgid="242" source="../tilesets/Grass.tsx"/>
- <tileset firstgid="245" source="../tilesets/indoor.tsx"/>
+ <tileset firstgid="251" source="../tilesets/Grass.tsx"/>
+ <tileset firstgid="254" source="../tilesets/indoor.tsx"/>
  <layer id="1" name="Terrain" width="24" height="34">
   <data encoding="csv">
 105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,105,
@@ -49,80 +49,66 @@
   <properties>
    <property name="group-id" type="int" value="0"/>
   </properties>
-  <object id="854" name="Player" x="705" y="2098">
+  <object id="854" name="Player" x="704" y="1978">
    <properties>
-    <property name="direction" value="up"/>
-    <property name="pos" value="entrance"/>
+    <property name="direction" value="u"/>
+    <property name="obj-id" type="int" value="0"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
   <object id="857" name="Character" x="603.333" y="1162.67">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="f6"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="young_girl"/>
-    <property name="radius" value="400"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="10"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
   <object id="858" name="Character" x="705" y="895.333">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="fx"/>
-    <property name="direction" value="down"/>
-    <property name="graphic" value="fire_boss"/>
-    <property name="radius" value="0"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="10"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
   <object id="859" name="Character" x="1002" y="1023">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="f3"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="purple_girl"/>
-    <property name="radius" value="400"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="10"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
   <object id="860" name="Character" x="540.333" y="1793.33">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="f1"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="young_guy"/>
-    <property name="radius" value="400"/>
+    <property name="direction" value="r"/>
+    <property name="obj-id" type="int" value="10"/>
    </properties>
    <point/>
   </object>
   <object id="908" name="Character" x="827" y="1496">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="f2"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="young_girl"/>
-    <property name="radius" value="400"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="10"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
   <object id="909" name="Character" x="791" y="736">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="f4"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="purple_girl"/>
-    <property name="radius" value="400"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="10"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
   <object id="910" name="Character" x="379" y="1076">
    <properties>
-    <property name="change_direction" type="bool" value="true"/>
-    <property name="character_id" value="f5"/>
-    <property name="direction" value="right"/>
-    <property name="graphic" value="purple_girl"/>
-    <property name="radius" value="400"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="10"/>
+    <property name="zindex" type="int" value="3"/>
    </properties>
    <point/>
   </object>
@@ -133,53 +119,63 @@
   </properties>
   <object id="878" gid="215" x="274.182" y="526.788" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="879" gid="236" x="563" y="1036" width="60" height="60"/>
   <object id="883" gid="218" x="874" y="1481" width="64" height="104">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="884" gid="219" x="473" y="1458" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="7"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="886" gid="240" x="406.667" y="1783.33" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="887" gid="240" x="1141" y="1520" width="60" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="889" gid="213" x="640" y="1600" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="890" gid="215" x="493" y="1723" width="64" height="128">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="893" gid="213" x="892" y="1436" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="894" gid="213" x="1152" y="1024" width="128" height="192">
    <properties>
-    <property name="obj-id" type="int" value="6"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
   <object id="907" gid="241" x="1175" y="1547" width="56" height="60">
    <properties>
-    <property name="obj-id" type="int" value="5"/>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
   </object>
  </objectgroup>
@@ -215,15 +211,15 @@
   <object id="936" x="432" y="1901" width="136" height="21"/>
   <object id="937" x="235" y="1853.5" width="164" height="50"/>
   <object id="938" x="811" y="1929" width="18" height="244"/>
+  <object id="939" x="602" y="2169" width="205" height="3"/>
  </objectgroup>
  <objectgroup id="5" name="Transition">
   <properties>
    <property name="group-id" type="int" value="2"/>
   </properties>
-  <object id="851" x="642.833" y="2129.33" width="114.917" height="42.8333">
+  <object id="851" x="614.833" y="2091.33" width="180.917" height="71.8333">
    <properties>
-    <property name="pos" value="fire"/>
-    <property name="target" value="world"/>
+    <property name="obj-id" type="int" value="1"/>
    </properties>
   </object>
  </objectgroup>

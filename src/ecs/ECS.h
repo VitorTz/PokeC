@@ -15,14 +15,14 @@ namespace pk {
 		std::unique_ptr<pk::SystemManager> system{};
 		std::unique_ptr<pk::Camera> camera{};		
 		std::vector<Rectangle> collisions{};
-		std::queue<pk::entity_t> entities_to_destroy{};
+		std::queue<pk::entity_t> entities_to_destroy{};		
 		bool should_destroy_all_entities{};
 
 	public:
-		ECS() : entity(std::make_unique<pk::EntityManager>()),
+		explicit ECS(const pk::SceneID scene_id) : entity(std::make_unique<pk::EntityManager>()),
 				component(std::make_unique<pk::ComponentManager>()),
 				system(std::make_unique<pk::SystemManager>()),
-				camera(std::make_unique<pk::Camera>()) { }
+				camera(std::make_unique<pk::Camera>(scene_id)) { }
 
 		pk::entity_t entity_create(const pk::zindex_t zindex, const bool add_to_camera) {
 			const pk::entity_t e = this->entity->entity_create();
@@ -70,17 +70,7 @@ namespace pk {
 			pk::sprite_t* s = this->component_get<pk::sprite_t>(e);
 			this->get_transform(e)->rect = { x, y, static_cast<float>(s->texture.width), static_cast<float>(s->texture.height) };			
 			return e;
-		}
-
-		pk::entity_t player_create(const float x, const float y) {
-			const pk::entity_t e = this->entity_create(pk::CAMERA_ZINDEX_OBJECTS, true);
-			const pk::entity_t shadow_entity = this->sprite_create(pk::CAMERA_ZINDEX_SHADOW, GRAPHICS_PATH "other/shadow.png");
-			this->component_insert<pk::player_t>(e, pk::player_t{ e, shadow_entity });
-			this->component_insert<pk::sprite_animation>(e, pk::sprite_animation_t{CHARACTERS_PATH "player.png", pk::PLAYER_SIZE, pk::PLAYER_SIZE, pk::ANIMATION_NORMAL});
-			this->component_insert<pk::character_t>(e, pk::character_t{ pk::PlayerID });
-			this->get_transform(e)->rect = { x, y, pk::PLAYER_SIZE, pk::PLAYER_SIZE };
-			return e;
-		}
+		}	
 
 		pk::transform_t* get_transform(const pk::entity_t e) {
 			return this->component->at<pk::transform_t>(e);

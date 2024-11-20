@@ -48,7 +48,7 @@ void pk::CoastSystem::draw(const pk::entity_t e) {
 	pk::ECS* ecs = pk::ecs_get();
 	const pk::coast_t* coast = ecs->component_get<pk::coast_t>(e);
 	pk::transform_t* transform = ecs->get_transform(e);
-	Texture t = coast->id == pk::Forest0 || coast->id == pk::Forest1 ? COAST_FOREST[coast->id - 2][index] : COAST_SAND[coast->id][index];
+	const Texture t = coast->id == pk::CoastForest0 || coast->id == pk::CoastForest1 ? COAST_FOREST[coast->id - pk::CoastForest0][index] : COAST_SAND[coast->id - pk::CoastSand0][index];
 	rect.x = coast->col * pk::TILE_SIZE;
 	rect.y = coast->row * pk::TILE_SIZE;
 	DrawTextureRec(t, rect, Vector2{ transform->rect.x, transform->rect.y }, WHITE);

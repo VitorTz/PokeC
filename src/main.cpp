@@ -1,5 +1,6 @@
 #include "scene/Scene.h"
 #include "constants.h"
+#include "util/TiledMap.h"
 #include "util/TexturePool.h"
 
 
@@ -18,8 +19,8 @@ static void update_frame() {
 
 
 int main(int* argc, char** argv) {
-    InitWindow(pk::SCREEN_W, pk::SCREEN_H, pk::WINDOW_TITLE);
-    
+    InitWindow(static_cast<int>(pk::SCREEN_W), static_cast<int>(pk::SCREEN_H), pk::WINDOW_TITLE);
+        
     pk::scene_init();
 
     #if defined(PLATFORM_WEB)

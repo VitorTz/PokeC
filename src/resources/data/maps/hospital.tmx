@@ -1,74 +1,194 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="64" tileheight="64" infinite="0" nextlayerid="12" nextobjectid="28">
+<map version="1.10" tiledversion="1.11.0" orientation="orthogonal" renderorder="right-down" width="20" height="12" tilewidth="64" tileheight="64" infinite="0" nextlayerid="13" nextobjectid="85">
  <properties>
   <property name="map-id" type="int" value="5"/>
  </properties>
  <tileset firstgid="1" source="../tilesets/world.tsx"/>
  <tileset firstgid="211" source="../tilesets/objects.tsx"/>
- <tileset firstgid="242" source="../tilesets/indoor.tsx"/>
+ <tileset firstgid="251" source="../tilesets/indoor.tsx"/>
  <layer id="1" name="Terrain" width="20" height="12">
   <data encoding="csv">
-247,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,248,249,
-277,258,258,270,271,258,258,258,258,270,271,258,258,258,258,270,271,258,258,259,
-277,268,268,280,281,268,268,268,268,280,281,268,268,268,268,280,281,268,268,259,
-277,278,278,278,278,278,278,278,278,278,278,278,278,278,278,278,278,278,278,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-277,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,288,259,
-297,298,260,261,298,298,298,298,298,298,298,298,298,298,298,298,298,298,298,299
+256,257,257,257,257,257,257,257,257,257,257,257,257,257,257,257,257,257,257,258,
+286,267,267,279,280,267,267,267,267,279,280,267,267,267,267,279,280,267,267,268,
+286,277,277,289,290,277,277,277,277,289,290,277,277,277,277,289,290,277,277,268,
+286,287,287,287,287,287,287,287,287,287,287,287,287,287,287,287,287,287,287,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+286,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,297,268,
+306,307,269,270,307,307,307,307,307,307,307,307,307,307,307,307,307,307,307,308
 </data>
  </layer>
- <layer id="11" name="TerrainTop" width="20" height="12">
-  <data encoding="csv">
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,305,0,0,0,0,0,0,0,0,0,0,0,0,307,0,0,0,
-0,0,0,315,0,0,0,0,0,0,0,0,0,0,0,0,317,0,0,0,
-0,0,0,315,0,0,0,0,0,0,0,0,0,0,0,0,317,0,0,0,
-0,0,0,315,0,0,0,0,0,0,0,0,0,0,0,0,317,0,0,0,
-0,0,0,325,326,326,326,326,326,326,326,326,326,326,326,326,327,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,
-0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0
-</data>
- </layer>
+ <objectgroup id="12" name="GameObjs">
+  <properties>
+   <property name="group-id" type="int" value="5"/>
+  </properties>
+  <object id="61" gid="248" x="192" y="256" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="62" gid="247" x="192" y="320" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="63" gid="247" x="192" y="384" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="64" gid="247" x="192" y="448" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="67" gid="246" x="192" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="68" gid="245" x="256" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="69" gid="245" x="384" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="70" gid="245" x="320" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="71" gid="245" x="448" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="72" gid="245" x="512" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="73" gid="245" x="576" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="74" gid="245" x="640" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="75" gid="245" x="768" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="76" gid="245" x="832" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="77" gid="245" x="704" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="78" gid="245" x="960" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="79" gid="245" x="896" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="80" gid="244" x="1024" y="512" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="81" gid="243" x="1024" y="448" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="82" gid="243" x="1024" y="384" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="83" gid="243" x="1024" y="320" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+  <object id="84" gid="242" x="1024" y="256" width="64" height="64">
+   <properties>
+    <property name="obj-id" type="int" value="2"/>
+    <property name="zindex" type="int" value="2"/>
+   </properties>
+  </object>
+ </objectgroup>
  <objectgroup id="2" name="Entities">
   <properties>
    <property name="group-id" type="int" value="0"/>
   </properties>
-  <object id="1" name="Player" x="190.666" y="661.333">
+  <object id="1" name="Player" x="190.666" y="631.391">
    <properties>
-    <property name="direction" value="up"/>
-    <property name="pos" value="world"/>
+    <property name="direction" value="u"/>
+    <property name="obj-id" type="int" value="0"/>
+    <property name="zindex" type="int" value="2"/>
    </properties>
    <point/>
   </object>
-  <object id="12" name="Character" x="287.846" y="431.973">
+  <object id="12" name="Character" x="285.914" y="422.314">
    <properties>
-    <property name="character_id" value="Nurse"/>
-    <property name="direction" value="down"/>
-    <property name="graphic" value="purple_girl"/>
-    <property name="radius" value="0"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="1"/>
+    <property name="zindex" type="int" value="1"/>
    </properties>
    <point/>
   </object>
-  <object id="19" name="Character" x="928" y="432">
+  <object id="19" name="Character" x="926.068" y="420.41">
    <properties>
-    <property name="character_id" value="Nurse"/>
-    <property name="direction" value="down"/>
-    <property name="graphic" value="purple_girl"/>
-    <property name="radius" value="0"/>
+    <property name="direction" value="d"/>
+    <property name="obj-id" type="int" value="1"/>
+    <property name="zindex" type="int" value="1"/>
    </properties>
    <point/>
   </object>
  </objectgroup>
- <objectgroup id="9" name="Collisions">
+ <objectgroup id="9" name="Collisions" visible="0">
   <properties>
    <property name="group-id" type="int" value="1"/>
   </properties>
@@ -80,14 +200,13 @@
   <object id="25" x="50" y="718" width="1180" height="32"/>
   <object id="26" x="1226" y="182" width="10" height="542"/>
  </objectgroup>
- <objectgroup id="5" name="Transition">
+ <objectgroup id="5" name="Transition" visible="0">
   <properties>
    <property name="group-id" type="int" value="2"/>
   </properties>
-  <object id="8" x="160.333" y="687.499" width="60" height="27.1667">
+  <object id="8" x="162.265" y="693.294" width="60" height="42.6204">
    <properties>
-    <property name="pos" value="hospital"/>
-    <property name="target" value="world"/>
+    <property name="obj-id" type="int" value="1"/>
    </properties>
   </object>
  </objectgroup>
